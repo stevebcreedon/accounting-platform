@@ -26,7 +26,7 @@ created: 2026-04-03
 | Heading font | Satoshi (inherited from Phase 1) |
 | Body font | DM Sans (inherited from Phase 1) |
 
-**Primary focal point:** The article title rendered in Satoshi at `text-h1` (2.5rem) with a clean meta line below it -- the reader's first anchor before scrolling into the content.
+**Primary focal point:** The article title rendered in Satoshi at `text-lg` (32px) on mobile, scaling to 40px via `md:text-[2.5rem]` on tablet+ -- the reader's first anchor before scrolling into the content.
 
 **Icon library rationale:** Lucide is the standard feather-style icon set for Next.js projects. It provides tree-shakeable SVG components. Only 5 icons are needed for this phase -- no full icon library overhead.
 
@@ -73,35 +73,52 @@ Exceptions: none -- all values are multiples of 4 from the Phase 1 scale.
 
 ## Typography
 
-Inherited from Phase 1. Phase 3 applies the existing type scale to specific article elements:
+Inherited from Phase 1. Phase 3 uses the same 4 tokens and 2 weights. Larger display sizes are achieved via responsive arbitrary values, not additional tokens.
 
-| Element | Token | Size | Weight | Line Height | Font |
-|---------|-------|------|--------|-------------|------|
-| Article H1 (title) | `text-h1` | 2.5rem (40px) | 700 | 1.15 | Satoshi |
-| Article H2 (section headings in body) | `text-h2` | 2rem (32px) | 600 | 1.2 | Satoshi |
-| Article H3 (subsection) | `text-h3` | 1.5rem (24px) | 600 | 1.3 | Satoshi |
-| Body text | `text-body` | 1rem (16px) | 400 | 1.7 | DM Sans |
-| Body large (intro paragraph) | `text-body-lg` | 1.125rem (18px) | 400 | 1.7 | DM Sans |
-| Meta line items | `text-sm` | 0.875rem (14px) | 400 | 1.6 | DM Sans |
-| Breadcrumb text | `text-sm` | 0.875rem (14px) | 400 | 1.6 | DM Sans |
-| TOC links | `text-sm` | 0.875rem (14px) | 400 | 1.6 | DM Sans |
-| TOC active link | `text-sm` | 0.875rem (14px) | 600 | 1.6 | DM Sans |
-| TOC heading label | `text-xs` | 0.75rem (12px) | 600 | 1.5 | DM Sans |
-| Key takeaways heading | `text-h4` | 1.25rem (20px) | 600 | 1.4 | Satoshi |
-| FAQ question | `text-body` | 1rem (16px) | 600 | 1.7 | DM Sans |
-| FAQ answer | `text-body` | 1rem (16px) | 400 | 1.7 | DM Sans |
-| Category pill | `text-xs` | 0.75rem (12px) | 600 | 1.5 | DM Sans |
-| Verified badge | `text-xs` | 0.75rem (12px) | 600 | 1.5 | DM Sans |
-| "Comprehensive Guide" badge | `text-sm` | 0.875rem (14px) | 600 | 1.6 | DM Sans |
-| Related article card title | `text-body` | 1rem (16px) | 600 | 1.7 | Satoshi |
-| Related article card description | `text-sm` | 0.875rem (14px) | 400 | 1.6 | DM Sans |
+### Phase 1 Token Map (4 sizes, 2 weights)
+
+| Token | Size | Font Family |
+|-------|------|-------------|
+| `text-lg` | 32px (2rem) | Satoshi |
+| `text-md` | 24px (1.5rem) | Satoshi |
+| `text-base` | 16px (1rem) | DM Sans |
+| `text-sm` | 14px (0.875rem) | DM Sans |
+
+| Weight | Value |
+|--------|-------|
+| Regular | 400 |
+| Bold | 700 |
+
+### Phase 3 Element Mapping
+
+| Element | Token | Weight | Line Height | Notes |
+|---------|-------|--------|-------------|-------|
+| Article H1 (title) | `text-lg` + `md:text-[2.5rem]` | 700 | 1.15 | 32px mobile, 40px tablet+ via responsive arbitrary value |
+| Article H2 (section headings) | `text-lg` | 700 | 1.25 | Uses text-lg token directly at 32px |
+| Article H3 (subsection) | `text-md` | 700 | 1.25 | Uses text-md token directly at 24px |
+| Body text | `text-base` | 400 | 1.7 | Standard prose |
+| Intro paragraph | `text-base` | 400 | 1.7 | Same token as body; distinguished by placement only |
+| Meta line items | `text-sm` | 400 | 1.6 | Dates, reading time |
+| Breadcrumb text | `text-sm` | 400 | 1.6 | All breadcrumb links |
+| TOC links | `text-sm` | 400 | 1.6 | Inactive state |
+| TOC active link | `text-sm` | 700 | 1.6 | Bold to mark active section |
+| TOC heading label | `text-sm` | 700 | 1.6 | "ON THIS PAGE" uppercase label |
+| Key takeaways heading | `text-md` | 700 | 1.25 | Section sub-heading |
+| FAQ question | `text-base` | 700 | 1.7 | Bold to differentiate from answer |
+| FAQ answer | `text-base` | 400 | 1.7 | Standard prose weight |
+| Category pill | `text-sm` | 700 | 1.6 | Small bold label |
+| Verified badge | `text-sm` | 700 | 1.6 | Small bold label |
+| "Comprehensive Guide" badge | `text-sm` | 700 | 1.6 | Pillar article badge |
+| Related article card title | `text-base` | 700 | 1.7 | Bold card heading |
+| Related article card description | `text-sm` | 400 | 1.6 | Secondary text |
+| Related article reading time | `text-sm` | 400 | 1.6 | Tertiary meta |
 
 ### Responsive Title Scale
 
-| Viewport | Article H1 Size |
-|----------|----------------|
-| Mobile (<768px) | 2rem (32px) via `text-h2` |
-| Tablet+ (>=768px) | 2.5rem (40px) via `md:text-h1` |
+| Viewport | Article H1 Size | Method |
+|----------|----------------|--------|
+| Mobile (<768px) | 32px | `text-lg` token |
+| Tablet+ (>=768px) | 40px | `md:text-[2.5rem]` responsive arbitrary value |
 
 Pillar article titles use the same scale -- the "Comprehensive Guide" badge and accent bar provide differentiation, not increased font size.
 
@@ -130,7 +147,7 @@ All colors inherited from Phase 1. Phase 3 introduces specific color application
 The burnt-orange accent (#E8720C) is used exclusively for:
 
 1. **TOC active section indicator** -- 2px left border on the active link
-2. **Category pill background** -- burnt-orange-50 (#FFF7ED) background with burnt-orange-500 text
+2. **Category pill background** -- burnt-orange-50 (#FFF7ED) background with burnt-orange-600 text
 3. **"Comprehensive Guide" badge** -- burnt-orange-500 background with white text
 4. **"Verified" badge icon** -- shield-check icon in burnt-orange-500
 5. **Hyperlinks** in article body (inherited from prose styling)
@@ -249,8 +266,8 @@ Displays article metadata in a horizontal row with divider dots.
 | Text color | stone-600 |
 | Icon color | stone-500 |
 | Divider | centered dot (middle dot character), stone-400, `mx-2` spacing |
-| Category pill | burnt-orange-50 bg, burnt-orange-600 text, `px-2 py-0.5`, `rounded-full` |
-| Verified badge | green-50 bg, green-700 text, `px-2 py-0.5`, `rounded-full` |
+| Category pill | burnt-orange-50 bg, burnt-orange-600 text, `px-2 py-1`, `rounded-full` |
+| Verified badge | green-50 bg, green-700 text, `px-2 py-1`, `rounded-full` |
 | Wrap behavior | Wraps naturally on mobile; items are inline-flex |
 
 **Source:** CONTEXT.md D-07, D-08, D-09
@@ -260,10 +277,10 @@ Displays article metadata in a horizontal row with divider dots.
 | Property | Desktop (>=1024px) | Mobile (<1024px) |
 |----------|---------------------|-------------------|
 | Container | White bg, `rounded-lg`, `p-6` | White bg, `rounded-lg`, `p-4`, `border border-stone-200` |
-| Heading | "ON THIS PAGE" -- text-xs, weight 600, stone-500, uppercase, `tracking-wider`, `mb-4` | "In this article" -- text-sm, weight 600, charcoal |
+| Heading | "ON THIS PAGE" -- text-sm, weight 700, stone-500, uppercase, `tracking-wider`, `mb-4` | "In this article" -- text-sm, weight 700, charcoal |
 | Link list | Vertical list, `space-y-1` | Vertical list, `space-y-1`, toggle visibility |
 | Link style | text-sm, stone-600, `py-1 pl-3`, `border-l-2 border-transparent` | text-sm, stone-600, `py-1` |
-| Active link | text-sm weight 600, charcoal, `border-l-2 border-burnt-orange-500` | text-sm weight 600, charcoal |
+| Active link | text-sm weight 700, charcoal, `border-l-2 border-burnt-orange-500` | text-sm weight 700, charcoal |
 | Hover link | charcoal text color | charcoal text color |
 | Transition | `transition-colors duration-150` on all links | none needed |
 | Toggle | not applicable | Chevron-down icon rotates 180deg when expanded |
@@ -279,7 +296,7 @@ An MDX component: `<KeyTakeaways>` wrapping a bullet list.
 | Property | Value |
 |----------|-------|
 | Container | burnt-orange-50 bg, 4px burnt-orange-200 left border, `rounded-r-lg`, `p-6` |
-| Heading | "Key Takeaways" -- text-h4 (1.25rem), Satoshi, weight 600, charcoal, `mb-4` |
+| Heading | "Key Takeaways" -- text-md (24px), Satoshi, weight 700, charcoal, `mb-4` |
 | List style | Disc bullets in burnt-orange-500, body text (16px), stone-700 |
 | List spacing | `space-y-2` between items |
 | Max width | Full width within `max-w-article` container |
@@ -292,8 +309,8 @@ An MDX component: `<FAQSection>` containing `<FAQItem question="...">` children.
 | Property | Value |
 |----------|-------|
 | Container | White bg, `rounded-lg`, `overflow-hidden` |
-| Section heading | "Frequently Asked Questions" -- text-h3 (1.5rem), Satoshi, weight 600, charcoal, `mb-6` |
-| Question row | `py-4 px-6`, charcoal text, weight 600, `cursor-pointer`, full-width flex between text and chevron |
+| Section heading | "Frequently Asked Questions" -- text-md (24px), Satoshi, weight 700, charcoal, `mb-6` |
+| Question row | `py-4 px-6`, charcoal text, weight 700, `cursor-pointer`, full-width flex between text and chevron |
 | Question hover | cream (#FAF8F5) background |
 | Chevron icon | Lucide `chevron-down` 20px, stone-500, rotates 180deg when open |
 | Chevron transition | `transition-transform duration-200` |
@@ -315,15 +332,15 @@ Displays 2-3 cards from `relatedSlugs` frontmatter field.
 
 | Property | Value |
 |----------|-------|
-| Section heading | "Related Articles" -- text-h3 (1.5rem), Satoshi, weight 600, charcoal, `mb-6` |
+| Section heading | "Related Articles" -- text-md (24px), Satoshi, weight 700, charcoal, `mb-6` |
 | Grid | `grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6` |
 | Card | White bg, `rounded-xl`, `shadow-card`, `overflow-hidden` |
 | Card hover | `shadow-card-hover`, `transition-shadow duration-200` |
 | Card padding | `p-6` |
 | Category pill | Same style as meta line category pill (burnt-orange-50 bg, burnt-orange-600 text, rounded-full) |
-| Title | text-body (16px), Satoshi, weight 600, charcoal, `mb-2` |
+| Title | text-base (16px), Satoshi, weight 700, charcoal, `mb-2` |
 | Description | text-sm (14px), DM Sans, weight 400, stone-700, line-clamp-2 |
-| Reading time | text-xs (12px), stone-500, `mt-3` |
+| Reading time | text-sm (14px), stone-500, `mt-3` |
 | Link | Entire card is clickable (`<a>` wrapper) |
 | Empty state | If no relatedSlugs or slugs not found, section is not rendered |
 
@@ -336,7 +353,7 @@ A static placeholder block. The actual email form ships in Phase 7.
 | Property | Value |
 |----------|-------|
 | Container | `border-2 border-dashed border-stone-300`, `rounded-lg`, `p-8`, centered text |
-| Heading | "Stay Updated" -- text-h4 (1.25rem), Satoshi, weight 600, stone-500 |
+| Heading | "Stay Updated" -- text-md (24px), Satoshi, weight 700, stone-500 |
 | Body | "Email capture form coming soon." -- text-sm (14px), DM Sans, stone-400 |
 | Background | transparent (cream shows through) |
 | Placement | After FAQ section, before related articles |
@@ -350,7 +367,7 @@ When `isPillar === true`, the article header receives enhanced treatment:
 | Property | Standard Article | Pillar Article |
 |----------|-----------------|----------------|
 | Accent bar | none | 3px `border-t-burnt-orange-500` on the header container |
-| Badge | none | "Comprehensive Guide" badge: burnt-orange-500 bg, white text, text-sm weight 600, `px-3 py-1`, `rounded-full`, positioned above the title with `mb-3` |
+| Badge | none | "Comprehensive Guide" badge: burnt-orange-500 bg, white text, text-sm weight 700, `px-3 py-1`, `rounded-full`, positioned above the title with `mb-3` |
 | Title size | Same responsive scale | Same responsive scale (badge provides distinction) |
 | Header area | Standard spacing | Slightly more vertical padding: `pt-6` instead of default |
 
@@ -374,7 +391,7 @@ When `isPillar === true`, the article header receives enhanced treatment:
 | State | Visual Treatment |
 |-------|-----------------|
 | Inactive | stone-600 text, transparent left border |
-| Active (in view) | charcoal text, weight 600, 2px burnt-orange-500 left border |
+| Active (in view) | charcoal text, weight 700, 2px burnt-orange-500 left border |
 | Hover | charcoal text, no border change |
 
 ### Related Article Cards
