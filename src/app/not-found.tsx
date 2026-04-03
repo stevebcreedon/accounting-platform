@@ -1,11 +1,10 @@
 import Link from 'next/link';
 import { Home } from 'lucide-react';
 import { CATEGORIES } from '@/lib/content/categories';
-import { DisclaimerBar } from '@/components/shared/disclaimer-bar';
 
 export default function NotFound() {
   return (
-    <main className="min-h-screen bg-cream">
+    <>
       <div className="max-w-article mx-auto px-6 md:px-8 py-18 text-center">
         <h1 className="font-heading text-h1 md:text-[2.5rem] text-charcoal mb-4">
           Page Not Found
@@ -39,9 +38,6 @@ export default function NotFound() {
         </div>
       </div>
 
-      <div className="max-w-article mx-auto px-6 md:px-8 pb-12">
-        <DisclaimerBar />
-      </div>
-    </main>
+    </>
   );
 }

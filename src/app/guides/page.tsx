@@ -2,7 +2,6 @@ import { getAllGuides, getReadingTime } from '@/lib/content/queries';
 import { getCategoryBySlug, CATEGORIES } from '@/lib/content/categories';
 import { FilterPills } from '@/components/shared/filter-pills';
 import type { SerializedGuide } from '@/components/shared/filter-pills';
-import { DisclaimerBar } from '@/components/shared/disclaimer-bar';
 
 export default function GuidesPage() {
   const guides: SerializedGuide[] = getAllGuides().map((g) => ({
@@ -18,7 +17,7 @@ export default function GuidesPage() {
   const categoryList = CATEGORIES.map((c) => ({ slug: c.slug, name: c.name }));
 
   return (
-    <main className="min-h-screen bg-cream">
+    <>
       <div className="max-w-7xl mx-auto px-6 md:px-8 pt-12 pb-12">
         <h1 className="font-heading text-h1 md:text-[2.5rem] text-charcoal mb-4">
           Accounting Guides
@@ -28,8 +27,7 @@ export default function GuidesPage() {
           -- written for Irish business owners.
         </p>
         <FilterPills categories={categoryList} allGuides={guides} />
-        <DisclaimerBar />
       </div>
-    </main>
+    </>
   );
 }

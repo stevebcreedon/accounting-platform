@@ -1,6 +1,5 @@
 import { MapPin, Search, Star } from 'lucide-react';
 import { EmailCTAPlaceholder } from '@/components/article/email-cta-placeholder';
-import { DisclaimerBar } from '@/components/shared/disclaimer-bar';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -11,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function FindAccountantPage() {
   return (
-    <main className="min-h-screen bg-cream">
+    <>
       <div className="max-w-4xl mx-auto text-center py-18 px-6 md:px-8">
         <h1 className="font-heading text-h1 md:text-[2.5rem] text-charcoal">
           Find an Accountant in Ireland
@@ -63,9 +62,6 @@ export default function FindAccountantPage() {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 md:px-8 pb-12">
-        <DisclaimerBar />
-      </div>
-    </main>
+    </>
   );
 }

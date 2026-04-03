@@ -1,4 +1,3 @@
-import { DisclaimerBar } from '@/components/shared/disclaimer-bar';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -9,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-cream">
+    <>
       <div className="max-w-article mx-auto px-6 md:px-8 pt-12 pb-12">
         <h1 className="font-heading text-h1 md:text-[2.5rem] text-charcoal mb-8">
           About The Ledger
@@ -100,8 +99,7 @@ export default function AboutPage() {
             financial side of your business.
           </p>
         </div>
-        <DisclaimerBar />
       </div>
-    </main>
+    </>
   );
 }

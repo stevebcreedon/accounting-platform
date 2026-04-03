@@ -1,6 +1,9 @@
 import type { Metadata, Viewport } from 'next';
 import { DM_Sans } from 'next/font/google';
 import localFont from 'next/font/local';
+import { SkipToContent } from '@/components/layout/skip-to-content';
+import { Header } from '@/components/layout/header';
+import { Footer } from '@/components/layout/footer';
 import './globals.css';
 
 const dmSans = DM_Sans({
@@ -48,7 +51,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSans.variable} ${satoshi.variable}`}>
       <body className="font-body bg-cream text-charcoal antialiased">
-        {children}
+        <SkipToContent />
+        <Header />
+        <main id="main-content" className="pt-16 min-h-screen">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

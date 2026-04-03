@@ -8,7 +8,6 @@ import {
   getAllCategorySlugs,
 } from '@/lib/content/categories';
 import { ArticleCard } from '@/components/shared/article-card';
-import { DisclaimerBar } from '@/components/shared/disclaimer-bar';
 import { Breadcrumbs } from '@/components/article/breadcrumbs';
 
 export function generateStaticParams() {
@@ -26,7 +25,7 @@ export default function CategoryPage({
   const guides = getGuidesByCategory(params.slug);
 
   return (
-    <main className="min-h-screen bg-cream">
+    <>
       <div className="max-w-7xl mx-auto px-6 md:px-8 pt-12 pb-12">
         <Breadcrumbs
           categorySlug={category.slug}
@@ -68,8 +67,7 @@ export default function CategoryPage({
           </div>
         )}
 
-        <DisclaimerBar />
       </div>
-    </main>
+    </>
   );
 }

@@ -4,14 +4,13 @@ import { getAllGuides, getReadingTime } from '@/lib/content/queries';
 import { getCategoryBySlug, CATEGORIES } from '@/lib/content/categories';
 import { ArticleCard } from '@/components/shared/article-card';
 import { CategoryCard } from '@/components/shared/category-card';
-import { DisclaimerBar } from '@/components/shared/disclaimer-bar';
 import { EmailCTAPlaceholder } from '@/components/article/email-cta-placeholder';
 
 export default function Home() {
   const latestGuides = getAllGuides().slice(0, 6);
 
   return (
-    <main className="min-h-screen bg-cream">
+    <>
       {/* Hero */}
       <section className="max-w-3xl mx-auto text-center py-18 px-6 md:px-8">
         <h1 className="font-heading text-h1 md:text-[3rem] lg:text-[3.5rem] text-charcoal leading-[1.1]">
@@ -82,10 +81,6 @@ export default function Home() {
         <EmailCTAPlaceholder />
       </section>
 
-      {/* Disclaimer */}
-      <div className="max-w-7xl mx-auto px-6 md:px-8 pb-12">
-        <DisclaimerBar />
-      </div>
-    </main>
+    </>
   );
 }
