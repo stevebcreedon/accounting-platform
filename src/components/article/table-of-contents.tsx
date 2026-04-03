@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 interface TocEntry {
   title: string;
   url: string;
-  items: { title: string; url: string; items: never[] }[];
+  items: TocEntry[];
 }
 
 interface TableOfContentsProps {
