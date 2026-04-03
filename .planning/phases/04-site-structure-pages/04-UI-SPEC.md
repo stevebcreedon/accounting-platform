@@ -26,7 +26,7 @@ created: 2026-04-03
 | Heading font | Satoshi (inherited from Phase 1) |
 | Body font | DM Sans (inherited from Phase 1) |
 
-**Primary focal point:** The homepage hero headline rendered in Satoshi at `text-h1` (40px) scaling to `text-hero` (56px) on desktop -- the first thing any visitor sees, establishing The Ledger's authority on Irish accounting.
+**Primary focal point:** The homepage hero headline rendered in Satoshi at `text-lg` (32px) scaling to 56px via responsive arbitrary values on desktop -- the first thing any visitor sees, establishing The Ledger's authority on Irish accounting.
 
 **Source:** Phase 1 UI-SPEC (inherited); Phase 3 UI-SPEC (component patterns); 04-CONTEXT.md D-01
 
@@ -90,61 +90,62 @@ Exceptions: none -- all values are multiples of 4 from the Phase 1 scale.
 
 ## Typography
 
-Inherited from Phase 1. Phase 4 uses the same tokens and weights from `tailwind.config.ts`.
+Inherited from Phase 1. Phase 4 uses the same 4 tokens and 2 weights. Larger display sizes are achieved via responsive arbitrary values, not additional tokens.
 
-### Phase 1 Token Map
+### Phase 1 Token Map (4 sizes, 2 weights)
 
 | Token | Size | Font Family |
 |-------|------|-------------|
-| `text-hero` | 56px (3.5rem) | Satoshi |
-| `text-h1` | 40px (2.5rem) | Satoshi |
-| `text-h2` | 32px (2rem) | Satoshi |
-| `text-h3` | 24px (1.5rem) | Satoshi |
-| `text-h4` | 20px (1.25rem) | Satoshi |
-| `text-body-lg` | 18px (1.125rem) | DM Sans |
-| `text-body` | 16px (1rem) | DM Sans |
+| `text-lg` | 32px (2rem) | Satoshi |
+| `text-md` | 24px (1.5rem) | Satoshi |
+| `text-base` | 16px (1rem) | DM Sans |
 | `text-sm` | 14px (0.875rem) | DM Sans |
-| `text-xs` | 12px (0.75rem) | DM Sans |
 
 | Weight | Value |
 |--------|-------|
 | Regular | 400 |
-| Semibold | 600 |
 | Bold | 700 |
 
 ### Phase 4 Element Mapping
 
 | Element | Token | Weight | Line Height | Notes |
 |---------|-------|--------|-------------|-------|
-| Homepage hero headline | `text-h1` + `md:text-[3rem]` + `lg:text-hero` | 700 | 1.1 | Responsive: 40px / 48px / 56px |
-| Homepage hero subheadline | `text-body-lg` + `md:text-[1.25rem]` | 400 | 1.7 | 18px mobile, 20px tablet+ |
-| Section headings ("Latest Guides", "Browse by Topic") | `text-h2` | 600 | 1.2 | 32px, Satoshi |
-| Article card title | `text-body` | 700 | 1.7 | 16px, Satoshi via `font-heading` |
+| Homepage hero headline | `text-lg` + `md:text-[3rem]` + `lg:text-[3.5rem]` | 700 | 1.1 | Responsive: 32px / 48px / 56px via arbitrary values |
+| Homepage hero subheadline | `text-base` + `md:text-[1.25rem]` | 400 | 1.7 | 16px mobile, 20px tablet+ via arbitrary value |
+| Section headings ("Latest Guides", "Browse by Topic") | `text-lg` | 700 | 1.25 | 32px, Satoshi |
+| Article card title | `text-base` | 700 | 1.7 | 16px, Satoshi via `font-heading` |
 | Article card description | `text-sm` | 400 | 1.6 | 14px, DM Sans, `line-clamp-2` |
 | Article card meta (reading time) | `text-sm` | 400 | 1.6 | 14px, stone-500 |
-| Category card name | `text-sm` | 600 | 1.6 | 14px, Satoshi via `font-heading` |
+| Category card name | `text-sm` | 700 | 1.6 | 14px, Satoshi via `font-heading` |
 | Category card emoji | 24px inline | -- | -- | Native emoji, no font token |
-| Filter pill text | `text-sm` | 600 | 1.6 | 14px, active vs inactive styling |
-| Guides hub page heading | `text-h1` | 700 | 1.15 | 40px, "Accounting Guides" |
-| Category archive heading | `text-h1` | 700 | 1.15 | 40px, category name |
-| Category archive description | `text-body-lg` | 400 | 1.7 | 18px, stone-700 |
-| Find-accountant heading | `text-h1` | 700 | 1.15 | 40px |
-| Find-accountant subheading | `text-body-lg` | 400 | 1.7 | 18px |
-| Feature preview item title | `text-body` | 700 | 1.7 | 16px |
+| Filter pill text | `text-sm` | 700 | 1.6 | 14px, active vs inactive styling |
+| Guides hub page heading | `text-lg` + `md:text-[2.5rem]` | 700 | 1.15 | 32px mobile, 40px tablet+, "Accounting Guides" |
+| Category archive heading | `text-lg` + `md:text-[2.5rem]` | 700 | 1.15 | 32px mobile, 40px tablet+, category name |
+| Category archive description | `text-base` + `md:text-[1.125rem]` | 400 | 1.7 | 16px mobile, 18px tablet+ via arbitrary value |
+| Find-accountant heading | `text-lg` + `md:text-[2.5rem]` | 700 | 1.15 | 32px mobile, 40px tablet+ |
+| Find-accountant subheading | `text-md` | 400 | 1.7 | 24px, stone-600 |
+| Feature preview item title | `text-base` | 700 | 1.7 | 16px |
 | Feature preview item description | `text-sm` | 400 | 1.6 | 14px |
-| Static page heading (about, privacy, etc.) | `text-h1` | 700 | 1.15 | 40px |
+| Static page heading (about, privacy, etc.) | `text-lg` + `md:text-[2.5rem]` | 700 | 1.15 | 32px mobile, 40px tablet+ |
 | Static page body | prose via `article-content` | 400 | 1.7 | Inherits all prose overrides |
-| 404 heading | `text-h1` | 700 | 1.15 | 40px |
-| 404 body | `text-body-lg` | 400 | 1.7 | 18px |
-| Footer disclaimer | `text-xs` | 400 | 1.5 | 12px, stone-500 |
+| 404 heading | `text-lg` + `md:text-[2.5rem]` | 700 | 1.15 | 32px mobile, 40px tablet+ |
+| 404 body | `text-base` + `md:text-[1.125rem]` | 400 | 1.7 | 16px mobile, 18px tablet+ via arbitrary value |
+| Footer disclaimer | `text-sm` | 400 | 1.6 | 14px, stone-500 |
 
 ### Responsive Hero Scale
 
 | Viewport | Hero Heading Size | Method |
 |----------|------------------|--------|
-| Mobile (<768px) | 40px | `text-h1` token |
+| Mobile (<768px) | 32px | `text-lg` token |
 | Tablet (>=768px) | 48px | `md:text-[3rem]` arbitrary value |
-| Desktop (>=1024px) | 56px | `lg:text-hero` token |
+| Desktop (>=1024px) | 56px | `lg:text-[3.5rem]` arbitrary value |
+
+### Responsive Page H1 Scale (non-hero)
+
+| Viewport | Page H1 Size | Method |
+|----------|-------------|--------|
+| Mobile (<768px) | 32px | `text-lg` token |
+| Tablet+ (>=768px) | 40px | `md:text-[2.5rem]` arbitrary value |
 
 **Source:** Phase 1 UI-SPEC typography; tailwind.config.ts fontSize tokens
 
@@ -317,9 +318,9 @@ All static pages use `max-w-article` (48rem) with `article-content` prose class 
 | Property | Value |
 |----------|-------|
 | Container | `max-w-3xl mx-auto text-center py-18 px-6 md:px-8` |
-| Headline | "The Ledger" -- `font-heading text-h1 md:text-[3rem] lg:text-hero text-charcoal`, weight 700 |
-| Value proposition | "Clear, jargon-free accounting guidance for Irish sole traders, company directors, and startup founders." -- `font-body text-body-lg md:text-[1.25rem] text-stone-700 max-w-2xl mx-auto mt-6` |
-| CTA link | "Browse all guides" -- `text-burnt-orange-500 hover:text-burnt-orange-600 font-body text-body font-semibold inline-flex items-center gap-2 mt-8` with Lucide `arrow-right` 16px |
+| Headline | "The Ledger" -- `font-heading text-lg md:text-[3rem] lg:text-[3.5rem] text-charcoal`, weight 700 |
+| Value proposition | "Clear, jargon-free accounting guidance for Irish sole traders, company directors, and startup founders." -- `font-body text-base md:text-[1.25rem] text-stone-700 max-w-2xl mx-auto mt-6` |
+| CTA link | "Browse all guides" -- `text-burnt-orange-500 hover:text-burnt-orange-600 font-body text-base font-bold inline-flex items-center gap-2 mt-8` with Lucide `arrow-right` 16px |
 | Decorative rule | `h-px bg-stone-200 max-w-xs mx-auto mt-12` (thin line below CTA for visual separation) |
 
 **Source:** 04-CONTEXT.md D-01
@@ -334,10 +335,10 @@ Reuses the exact pattern from Phase 3 RelatedArticles. Used on homepage, guides 
 | Link | Entire card wrapped in `<Link>` to `/guides/{slug}` |
 | Padding | `p-6` |
 | Category pill | `text-sm font-bold px-2 py-1 rounded-full bg-burnt-orange-50 text-burnt-orange-600` |
-| Title | `font-heading text-body font-bold text-charcoal mt-3 mb-2` |
+| Title | `font-heading text-base font-bold text-charcoal mt-3 mb-2` |
 | Description | `text-sm text-stone-700 line-clamp-2` |
 | Reading time | `text-sm text-stone-500 mt-3` |
-| Pillar badge | "Comprehensive Guide" -- `text-xs font-bold px-2 py-0.5 rounded-full bg-burnt-orange-500 text-white ml-2` inline with category pill |
+| Pillar badge | "Comprehensive Guide" -- `text-sm font-bold px-2 py-1 rounded-full bg-burnt-orange-500 text-white ml-2` inline with category pill |
 | Empty state | If no published articles exist, show empty state copy (see Copywriting) |
 
 **Source:** Phase 3 UI-SPEC RelatedArticles component; 04-CONTEXT.md D-05
@@ -349,7 +350,7 @@ Reuses the exact pattern from Phase 3 RelatedArticles. Used on homepage, guides 
 | Container | `bg-white rounded-xl border border-stone-200 p-4 text-center hover:bg-burnt-orange-50 hover:border-burnt-orange-200 transition-colors duration-150` |
 | Link | Wrapped in `<Link>` to `/guides/category/{slug}` |
 | Emoji | 24px native emoji, `text-2xl mb-2`, block-level centered |
-| Name | `font-heading text-sm font-semibold text-charcoal` |
+| Name | `font-heading text-sm font-bold text-charcoal` |
 | Grid | 2 columns mobile, 4 columns tablet+ (`grid-cols-2 md:grid-cols-4`) |
 | Gap | 16px (`gap-4`) |
 
@@ -360,8 +361,8 @@ Reuses the exact pattern from Phase 3 RelatedArticles. Used on homepage, guides 
 | Property | Value |
 |----------|-------|
 | Container | `flex gap-2 overflow-x-auto pb-2 -mx-6 px-6 md:mx-0 md:px-0 md:flex-wrap` |
-| Pill (inactive) | `rounded-full px-4 py-2 text-sm font-semibold border border-stone-200 bg-white text-stone-600 whitespace-nowrap` |
-| Pill (active) | `rounded-full px-4 py-2 text-sm font-semibold bg-burnt-orange-500 text-white whitespace-nowrap` |
+| Pill (inactive) | `rounded-full px-4 py-2 text-sm font-bold border border-stone-200 bg-white text-stone-600 whitespace-nowrap` |
+| Pill (active) | `rounded-full px-4 py-2 text-sm font-bold bg-burnt-orange-500 text-white whitespace-nowrap` |
 | Pill hover (inactive) | `hover:bg-stone-50 hover:border-stone-300` |
 | Transition | `transition-colors duration-150` |
 | "All" pill | First in the list, active by default |
@@ -376,16 +377,16 @@ Reuses the exact pattern from Phase 3 RelatedArticles. Used on homepage, guides 
 | Property | Value |
 |----------|-------|
 | Container | `max-w-4xl mx-auto text-center py-18 px-6 md:px-8` |
-| Heading | "Find an Accountant in Ireland" -- `font-heading text-h1 text-charcoal` |
-| Subheading | "Directory Coming Soon" -- `font-heading text-h3 text-stone-600 mt-4` |
-| Description | Value proposition paragraph -- `text-body-lg text-stone-700 max-w-2xl mx-auto mt-6` |
+| Heading | "Find an Accountant in Ireland" -- `font-heading text-lg md:text-[2.5rem] text-charcoal` |
+| Subheading | "Directory Coming Soon" -- `font-heading text-md text-stone-600 mt-4` |
+| Description | Value proposition paragraph -- `text-base md:text-[1.125rem] text-stone-700 max-w-2xl mx-auto mt-6` |
 | Feature grid | `grid grid-cols-1 md:grid-cols-3 gap-6 mt-12` |
 | Feature card | `bg-white rounded-xl border border-stone-200 p-6 text-center` |
 | Feature card icon | Lucide icon at 32px in stone-600, `mb-3` |
-| Feature card title | `font-heading text-body font-bold text-charcoal mb-2` |
+| Feature card title | `font-heading text-base font-bold text-charcoal mb-2` |
 | Feature card description | `text-sm text-stone-700` |
 | CTA section | `mt-12` |
-| CTA button | `inline-flex items-center gap-2 bg-burnt-orange-500 hover:bg-burnt-orange-600 text-white font-semibold px-8 py-3 rounded-full transition-colors duration-150` |
+| CTA button | `inline-flex items-center gap-2 bg-burnt-orange-500 hover:bg-burnt-orange-600 text-white font-bold px-8 py-3 rounded-full transition-colors duration-150` |
 
 Feature preview items:
 
@@ -402,7 +403,7 @@ Feature preview items:
 | Property | Value |
 |----------|-------|
 | Container | `max-w-article mx-auto px-6 md:px-8 pt-12 pb-12` |
-| Heading | `font-heading text-h1 text-charcoal mb-8` |
+| Heading | `font-heading text-lg md:text-[2.5rem] text-charcoal mb-8` |
 | Body | `article-content` class for prose typography (inherits all Phase 1 overrides) |
 | Contact page | No form -- `mailto:` link styled as inline burnt-orange link |
 
@@ -413,13 +414,13 @@ Feature preview items:
 | Property | Value |
 |----------|-------|
 | Container | `max-w-article mx-auto px-6 md:px-8 py-18 text-center` |
-| Heading | "Page Not Found" -- `font-heading text-h1 text-charcoal mb-4` |
-| Body | "The page you're looking for doesn't exist or has been moved." -- `text-body-lg text-stone-700 mb-8` |
-| Home link | "Back to homepage" -- `text-burnt-orange-500 hover:text-burnt-orange-600 font-semibold inline-flex items-center gap-2` with Lucide `home` 16px |
+| Heading | "Page Not Found" -- `font-heading text-lg md:text-[2.5rem] text-charcoal mb-4` |
+| Body | "The page you're looking for doesn't exist or has been moved." -- `text-base md:text-[1.125rem] text-stone-700 mb-8` |
+| Home link | "Back to homepage" -- `text-burnt-orange-500 hover:text-burnt-orange-600 font-bold inline-flex items-center gap-2` with Lucide `home` 16px |
 | Category links section | `mt-12` |
-| Category links heading | "Or browse by topic:" -- `text-body font-semibold text-charcoal mb-4` |
+| Category links heading | "Or browse by topic:" -- `text-base font-bold text-charcoal mb-4` |
 | Category link list | `flex flex-wrap justify-center gap-3` |
-| Category link pill | Same styling as inactive filter pill: `rounded-full px-4 py-2 text-sm font-semibold border border-stone-200 bg-white text-charcoal hover:bg-burnt-orange-50 hover:border-burnt-orange-200 transition-colors duration-150` |
+| Category link pill | Same styling as inactive filter pill: `rounded-full px-4 py-2 text-sm font-bold border border-stone-200 bg-white text-charcoal hover:bg-burnt-orange-50 hover:border-burnt-orange-200 transition-colors duration-150` |
 
 **Source:** 04-CONTEXT.md D-12
 
@@ -428,7 +429,7 @@ Feature preview items:
 | Property | Value |
 |----------|-------|
 | Container | `border-t border-stone-200 pt-6 mt-12` |
-| Text | `text-xs text-stone-500 max-w-3xl` |
+| Text | `text-sm text-stone-500 max-w-3xl` |
 | Placement | Bottom of every page, before footer navigation (Phase 5 builds the full footer; Phase 4 creates a minimal disclaimer bar) |
 | Content | "The information on this site is for educational purposes only and does not constitute professional accounting, tax, or legal advice. For guidance specific to your situation, consult a qualified Irish accountant or tax adviser." |
 
