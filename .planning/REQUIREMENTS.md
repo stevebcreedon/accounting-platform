@@ -38,7 +38,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Site Structure & Pages
 
-- [ ] **PAGE-01**: Homepage with hero section, latest articles (6), category grid (8), email capture section
+- [x] **PAGE-01**: Homepage with hero section, latest articles (6), category grid (8), email capture section
 - [ ] **PAGE-02**: Guides hub page with category filter pills (horizontally scrollable on mobile), article grid, pillar badges
 - [ ] **PAGE-03**: Category archive pages at /guides/category/[slug] with filtered articles
 - [ ] **PAGE-04**: Find-Accountant placeholder page at /find-accountant with waitlist email capture and feature preview
@@ -47,7 +47,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **PAGE-07**: Privacy policy page (GDPR-compliant, references Irish DPC as supervisory authority)
 - [ ] **PAGE-08**: Terms of service page
 - [ ] **PAGE-09**: Custom 404 page with navigation and search/category links
-- [ ] **PAGE-10**: Accounting disclaimer in footer and per-article notice ("educational, not professional advice")
+- [x] **PAGE-10**: Accounting disclaimer in footer and per-article notice ("educational, not professional advice")
 
 ### Navigation & Layout
 
@@ -198,7 +198,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | ART-06 | Phase 3 | Complete |
 | ART-07 | Phase 3 | Complete |
 | ART-08 | Phase 3 | Complete |
-| PAGE-01 | Phase 4 | Pending |
+| PAGE-01 | Phase 4 | Complete |
 | PAGE-02 | Phase 4 | Pending |
 | PAGE-03 | Phase 4 | Pending |
 | PAGE-04 | Phase 4 | Pending |
@@ -207,7 +207,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PAGE-07 | Phase 4 | Pending |
 | PAGE-08 | Phase 4 | Pending |
 | PAGE-09 | Phase 4 | Pending |
-| PAGE-10 | Phase 4 | Pending |
+| PAGE-10 | Phase 4 | Complete |
 | NAV-01 | Phase 5 | Pending |
 | NAV-02 | Phase 5 | Pending |
 | NAV-03 | Phase 5 | Pending |

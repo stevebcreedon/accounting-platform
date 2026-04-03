@@ -85,7 +85,7 @@ Plans:
   5. About, Contact, Privacy (referencing Irish DPC), Terms, and 404 pages all render with correct content
 **Plans**: 3 plans
 Plans:
-- [ ] 04-01-PLAN.md — Shared components (ArticleCard, CategoryCard, DisclaimerBar) and homepage
+- [x] 04-01-PLAN.md — Shared components (ArticleCard, CategoryCard, DisclaimerBar) and homepage
 - [ ] 04-02-PLAN.md — Guides hub with filter pills and category archive pages
 - [ ] 04-03-PLAN.md — Find-accountant placeholder, static pages (about, contact, privacy, terms), and 404
 **UI hint**: yes
