@@ -36,7 +36,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. Global prose typography styles render correctly for long-form article content
 **Plans**: 2 plans
 Plans:
-- [ ] 01-01-PLAN.md — Initialize Next.js 14 project with dependencies, font loading, root layout, and cn() utility
+- [x] 01-01-PLAN.md — Initialize Next.js 14 project with dependencies, font loading, root layout, and cn() utility
 - [ ] 01-02-PLAN.md — Configure Tailwind design tokens, prose typography overrides, and branded placeholder page
 **UI hint**: yes
 
