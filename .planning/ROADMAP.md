@@ -52,7 +52,7 @@ Plans:
   5. Reading time is calculated and available in article metadata
 **Plans**: 2 plans
 Plans:
-- [ ] 02-01-PLAN.md — Velite MDX pipeline with Zod schema, Next.js integration, categories config, and MDX renderer
+- [x] 02-01-PLAN.md — Velite MDX pipeline with Zod schema, Next.js integration, categories config, and MDX renderer
 - [ ] 02-02-PLAN.md — Content query functions with scheduled publishing and 3 sample Irish accounting articles
 
 ### Phase 3: Article Page Template
@@ -164,7 +164,7 @@ Note: Phases 1 and 5 have no dependency between them. Phases 2-4 are the strict 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Project Scaffold | 0/2 | Planning complete | - |
-| 2. Content Pipeline | 0/2 | Planning complete | - |
+| 2. Content Pipeline | 1/2 | In Progress|  |
 | 3. Article Page Template | 0/? | Not started | - |
 | 4. Site Structure & Pages | 0/? | Not started | - |
 | 5. Navigation & Accessibility | 0/? | Not started | - |

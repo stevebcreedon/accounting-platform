@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: verifying
-stopped_at: Phase 2 context gathered
-last_updated: "2026-04-03T18:35:27.835Z"
+status: executing
+stopped_at: Completed 02-01-PLAN.md
+last_updated: "2026-04-03T19:15:16.230Z"
 last_activity: 2026-04-03
 progress:
   total_phases: 10
   completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
+  total_plans: 4
+  completed_plans: 3
   percent: 0
 ---
 
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-03)
 
 **Core value:** Irish small business owners find clear, jargon-free answers to every accounting question they'd Google -- and trust this platform enough to sign up for the directory when it launches.
-**Current focus:** Phase 01 — project-scaffold
+**Current focus:** Phase 02 — content-pipeline
 
 ## Current Position
 
-Phase: 2
-Plan: Not started
-Status: Phase complete — ready for verification
+Phase: 02 (content-pipeline) — EXECUTING
+Plan: 2 of 2
+Status: Ready to execute
 Last activity: 2026-04-03
 
 Progress: [░░░░░░░░░░] 0%
@@ -54,6 +54,7 @@ Progress: [░░░░░░░░░░] 0%
 *Updated after each plan completion*
 | Phase 01 P01 | 4min | 2 tasks | 16 files |
 | Phase 01 P02 | 2min | 3 tasks | 3 files |
+| Phase 02-01 P01 | 2min | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -69,6 +70,8 @@ Recent decisions affecting current work:
 - [Phase 01]: Satoshi selected as heading font (most distinctive geometric sans-serif from D-05 options)
 - [Phase 01]: Design tokens refined: full burnt-orange 10-shade palette, editorial spacing, prose overrides for article content
 - [Phase 01]: article-content CSS class established as standard wrapper for all MDX article pages
+- [Phase 02-01]: Velite strict Zod schema with publishDate as single publishing gate (no draft status field)
+- [Phase 02-01]: #site/content path alias for Velite generated output (Node.js subpath import pattern)
 
 ### Pending Todos
 
@@ -81,6 +84,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-03T18:35:27.832Z
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-content-pipeline/02-CONTEXT.md
+Last session: 2026-04-03T19:15:16.227Z
+Stopped at: Completed 02-01-PLAN.md
+Resume file: None
