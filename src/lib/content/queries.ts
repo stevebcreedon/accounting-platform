@@ -8,7 +8,7 @@ export type Guide = (typeof guides)[number];
  * Velite's s.isodate() normalizes dates to ISO 8601.
  */
 function isPublished(guide: Guide): boolean {
-  return guide.publishDate <= new Date().toISOString().slice(0, 10);
+  return guide.publishDate.slice(0, 10) <= new Date().toISOString().slice(0, 10);
 }
 
 /**
