@@ -26,6 +26,8 @@ created: 2026-04-03
 | Heading font | Satoshi (variable, loaded via next/font/local from Fontshare woff2 files) |
 | Body font | DM Sans (variable, loaded via next/font/google) |
 
+**Primary focal point:** The brand wordmark "The Ledger" rendered in Satoshi at hero scale, centered on the cream background -- the single visual anchor on the Phase 1 placeholder page.
+
 **Source:** CONTEXT.md D-05, D-06; RESEARCH.md Pattern 1
 
 **Why no shadcn:** The project uses a bespoke warm editorial design language (Monocle/Stripe Press references) that does not align with shadcn's neutral base. Custom Tailwind tokens provide full control over the distinctive brand identity. Component primitives may be introduced in later phases if needed.
@@ -44,11 +46,11 @@ Declared values (all multiples of 4):
 | lg | 24px | `p-6` / `gap-6` | Section padding, content gutters |
 | xl | 32px | `p-8` / `gap-8` | Layout gaps between major elements |
 | 2xl | 48px | `p-12` / `gap-12` | Major section breaks |
-| 3xl | 72px | `p-18` / custom `py-18` | Hero vertical padding, page-level breathing room |
-| 4xl | 120px | `py-30` / custom `py-30` | Top-of-page hero vertical spacing |
+| 3xl (editorial override) | 72px | `p-18` / custom `py-18` | Hero vertical padding, page-level breathing room |
+| 4xl (editorial override) | 120px | `py-30` / custom `py-30` | Top-of-page hero vertical spacing |
 
 Exceptions:
-- Custom spacing tokens `18` (4.5rem / 72px) and `30` (7.5rem / 120px) added to tailwind.config.ts for editorial-scale generous whitespace per D-08.
+- **Editorial overrides:** Custom spacing tokens `18` (4.5rem / 72px) and `30` (7.5rem / 120px) are added to tailwind.config.ts. These exceed the standard 8-point scale and are justified by the generous editorial whitespace requirement (D-08). They are used exclusively for hero-level vertical spacing and page-level breathing room -- not for component-level layout.
 - Content gutters: `px-6` (24px) on mobile, `px-8` (32px) on tablet+.
 
 **Source:** CONTEXT.md D-08 (generous whitespace); RESEARCH.md Pattern 3
@@ -57,29 +59,34 @@ Exceptions:
 
 ## Typography
 
-### Type Scale
+### Type Scale (4 sizes)
 
-| Role | Size | Weight | Line Height | Letter Spacing | Font Family | Tailwind Class |
-|------|------|--------|-------------|----------------|-------------|----------------|
-| Display | 72px (4.5rem) | 700 | 1.05 | -0.03em | Satoshi | `text-display font-heading` |
-| Hero | 56px (3.5rem) | 700 | 1.1 | -0.025em | Satoshi | `text-hero font-heading` |
-| H1 | 40px (2.5rem) | 700 | 1.15 | -0.02em | Satoshi | `text-h1 font-heading` |
-| H2 | 32px (2rem) | 600 | 1.2 | -0.015em | Satoshi | `text-h2 font-heading` |
-| H3 | 24px (1.5rem) | 600 | 1.3 | -0.01em | Satoshi | `text-h3 font-heading` |
-| H4 | 20px (1.25rem) | 600 | 1.4 | 0 | Satoshi | `text-h4 font-heading` |
-| Body Large | 18px (1.125rem) | 400 | 1.7 | 0 | DM Sans | `text-body-lg font-body` |
-| Body | 16px (1rem) | 400 | 1.7 | 0 | DM Sans | `text-body font-body` |
-| Small | 14px (0.875rem) | 400 | 1.6 | 0 | DM Sans | `text-sm font-body` |
-| Extra Small | 12px (0.75rem) | 400 | 1.5 | 0 | DM Sans | `text-xs font-body` |
+Size variation creates hierarchy. Weight variation differentiates roles within the same size.
 
-### Font Weights Used
+| Token | Size | Weight | Line Height | Letter Spacing | Font Family | Usage |
+|-------|------|--------|-------------|----------------|-------------|-------|
+| `text-lg` | 32px (2rem) | 700 | 1.15 | -0.02em | Satoshi | H1, hero headings, display text. Use 700 for page titles, 400 for pull quotes. |
+| `text-md` | 24px (1.5rem) | 700 | 1.25 | -0.01em | Satoshi | H2, H3 headings, section titles. Use 700 for H2, 400 for H3 subheadings. |
+| `text-base` | 16px (1rem) | 400 | 1.7 | 0 | DM Sans | Body text, descriptions, article content. Use 700 for inline bold/emphasis. |
+| `text-sm` | 14px (0.875rem) | 400 | 1.6 | 0 | DM Sans | Meta text, captions, timestamps, labels. Use 700 for label emphasis. |
+
+### Responsive Scale for Hero/Display
+
+Hero and display sizes are NOT separate tokens. They are responsive variants of `text-lg` applied via Tailwind responsive prefixes:
+
+| Context | Mobile | Tablet (md:) | Desktop (lg:) |
+|---------|--------|--------------|---------------|
+| Hero heading | 32px (`text-lg`) | 48px (`md:text-[3rem]`) | 56px (`lg:text-[3.5rem]`) |
+| Page H1 | 32px (`text-lg`) | 40px (`md:text-[2.5rem]`) | 40px (`lg:text-[2.5rem]`) |
+
+These responsive utilities use arbitrary values, not additional tokens.
+
+### Font Weights Used (2 weights)
 
 | Weight | Value | Usage |
 |--------|-------|-------|
-| Regular | 400 | Body text, descriptions, meta information |
-| Medium | 500 | Emphasis within body text, labels |
-| Semibold | 600 | H2, H3, H4 headings, subheadings |
-| Bold | 700 | Display, Hero, H1 headings, brand wordmark |
+| Regular | 400 | Body text, descriptions, meta information, H3 subheadings, pull quotes |
+| Bold | 700 | H1, H2 headings, brand wordmark, inline emphasis, label emphasis |
 
 ### Prose Typography (Article Content)
 
