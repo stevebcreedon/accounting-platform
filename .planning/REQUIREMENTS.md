@@ -1,7 +1,7 @@
 # Requirements: Irish Accountant Discovery Platform
 
 **Defined:** 2026-04-03
-**Core Value:** Irish small business owners find clear, jargon-free answers to every accounting question they'd Google — and trust this platform enough to sign up for the directory when it launches.
+**Core Value:** Irish small business owners find clear, jargon-free answers to every accounting question they'd Google -- and trust this platform enough to sign up for the directory when it launches.
 
 ## v1 Requirements
 
@@ -42,7 +42,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **PAGE-02**: Guides hub page with category filter pills (horizontally scrollable on mobile), article grid, pillar badges
 - [ ] **PAGE-03**: Category archive pages at /guides/category/[slug] with filtered articles
 - [ ] **PAGE-04**: Find-Accountant placeholder page at /find-accountant with waitlist email capture and feature preview
-- [ ] **PAGE-05**: About page (brand mission and platform purpose — no personal bio)
+- [ ] **PAGE-05**: About page (brand mission and platform purpose -- no personal bio)
 - [ ] **PAGE-06**: Contact page with contact form or email
 - [ ] **PAGE-07**: Privacy policy page (GDPR-compliant, references Irish DPC as supervisory authority)
 - [ ] **PAGE-08**: Terms of service page
@@ -98,7 +98,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **ANIM-01**: Framer Motion (motion package v12) page transitions between routes
 - [ ] **ANIM-02**: Scroll-triggered reveal animations on homepage sections and article components
 - [ ] **ANIM-03**: Hover state micro-interactions on cards, buttons, and navigation links
-- [ ] **ANIM-04**: LazyMotion used to minimize JS bundle — strict server/client component boundaries
+- [ ] **ANIM-04**: LazyMotion used to minimize JS bundle -- strict server/client component boundaries
 - [ ] **ANIM-05**: Reading progress indicator bar on article pages (scroll-based)
 - [ ] **ANIM-06**: Smooth accordion animation on FAQ sections
 - [ ] **ANIM-07**: All animations respect prefers-reduced-motion media query
@@ -123,7 +123,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Deployment
 
-- [ ] **DEPLOY-01**: Deployed on Vercel (default domain — no custom domain)
+- [ ] **DEPLOY-01**: Deployed on Vercel (default domain -- no custom domain)
 - [ ] **DEPLOY-02**: Environment variables configured in Vercel dashboard
 - [ ] **DEPLOY-03**: Daily rebuild trigger (Vercel cron or GitHub Action) at 06:00 UTC for scheduled publishing
 - [ ] **DEPLOY-04**: Build succeeds with all 8+ pillar articles rendered
@@ -136,7 +136,7 @@ Deferred to future release. Tracked but not in current roadmap.
 
 - **DIR-01**: Full accountant directory with search/filter by county, service, specialisation
 - **DIR-02**: Firm profiles with claim flow and email verification
-- **DIR-03**: Subscription tiers (Free / Professional €49/mo / Featured €149/mo)
+- **DIR-03**: Subscription tiers (Free / Professional E49/mo / Featured E149/mo)
 - **DIR-04**: Stripe integration for accountant payments
 - **DIR-05**: County landing pages (/find-accountant/dublin, etc.)
 - **DIR-06**: Service landing pages (/find-accountant/bookkeeping, etc.)
@@ -178,13 +178,97 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (Populated by roadmapper) | | |
+| FOUND-01 | Phase 1 | Pending |
+| FOUND-02 | Phase 1 | Pending |
+| FOUND-03 | Phase 1 | Pending |
+| FOUND-04 | Phase 1 | Pending |
+| FOUND-05 | Phase 1 | Pending |
+| CONT-01 | Phase 2 | Pending |
+| CONT-02 | Phase 2 | Pending |
+| CONT-03 | Phase 2 | Pending |
+| CONT-04 | Phase 2 | Pending |
+| CONT-05 | Phase 2 | Pending |
+| CONT-06 | Phase 2 | Pending |
+| CONT-07 | Phase 2 | Pending |
+| ART-01 | Phase 3 | Pending |
+| ART-02 | Phase 3 | Pending |
+| ART-03 | Phase 3 | Pending |
+| ART-04 | Phase 3 | Pending |
+| ART-05 | Phase 3 | Pending |
+| ART-06 | Phase 3 | Pending |
+| ART-07 | Phase 3 | Pending |
+| ART-08 | Phase 3 | Pending |
+| PAGE-01 | Phase 4 | Pending |
+| PAGE-02 | Phase 4 | Pending |
+| PAGE-03 | Phase 4 | Pending |
+| PAGE-04 | Phase 4 | Pending |
+| PAGE-05 | Phase 4 | Pending |
+| PAGE-06 | Phase 4 | Pending |
+| PAGE-07 | Phase 4 | Pending |
+| PAGE-08 | Phase 4 | Pending |
+| PAGE-09 | Phase 4 | Pending |
+| PAGE-10 | Phase 4 | Pending |
+| NAV-01 | Phase 5 | Pending |
+| NAV-02 | Phase 5 | Pending |
+| NAV-03 | Phase 5 | Pending |
+| NAV-04 | Phase 5 | Pending |
+| PERF-05 | Phase 5 | Pending |
+| PERF-06 | Phase 5 | Pending |
+| SEO-01 | Phase 6 | Pending |
+| SEO-02 | Phase 6 | Pending |
+| SEO-03 | Phase 6 | Pending |
+| SEO-04 | Phase 6 | Pending |
+| SEO-05 | Phase 6 | Pending |
+| SEO-06 | Phase 6 | Pending |
+| SEO-07 | Phase 6 | Pending |
+| SEO-08 | Phase 6 | Pending |
+| SEO-09 | Phase 6 | Pending |
+| SEO-10 | Phase 6 | Pending |
+| SEO-11 | Phase 6 | Pending |
+| SEO-12 | Phase 6 | Pending |
+| SEO-13 | Phase 6 | Pending |
+| EMAIL-01 | Phase 7 | Pending |
+| EMAIL-02 | Phase 7 | Pending |
+| EMAIL-03 | Phase 7 | Pending |
+| EMAIL-04 | Phase 7 | Pending |
+| EMAIL-05 | Phase 7 | Pending |
+| EMAIL-06 | Phase 7 | Pending |
+| EMAIL-07 | Phase 7 | Pending |
+| EMAIL-08 | Phase 7 | Pending |
+| ANAL-01 | Phase 8 | Pending |
+| ANAL-02 | Phase 8 | Pending |
+| ANAL-03 | Phase 8 | Pending |
+| ANAL-04 | Phase 8 | Pending |
+| ANAL-05 | Phase 8 | Pending |
+| ANAL-06 | Phase 8 | Pending |
+| ANAL-07 | Phase 8 | Pending |
+| ANIM-01 | Phase 9 | Pending |
+| ANIM-02 | Phase 9 | Pending |
+| ANIM-03 | Phase 9 | Pending |
+| ANIM-04 | Phase 9 | Pending |
+| ANIM-05 | Phase 9 | Pending |
+| ANIM-06 | Phase 9 | Pending |
+| ANIM-07 | Phase 9 | Pending |
+| PERF-01 | Phase 9 | Pending |
+| PERF-02 | Phase 9 | Pending |
+| PERF-03 | Phase 9 | Pending |
+| PERF-04 | Phase 9 | Pending |
+| WRITE-01 | Phase 10 | Pending |
+| WRITE-02 | Phase 10 | Pending |
+| WRITE-03 | Phase 10 | Pending |
+| WRITE-04 | Phase 10 | Pending |
+| WRITE-05 | Phase 10 | Pending |
+| WRITE-06 | Phase 10 | Pending |
+| DEPLOY-01 | Phase 10 | Pending |
+| DEPLOY-02 | Phase 10 | Pending |
+| DEPLOY-03 | Phase 10 | Pending |
+| DEPLOY-04 | Phase 10 | Pending |
 
 **Coverage:**
-- v1 requirements: 72 total
-- Mapped to phases: 0
-- Unmapped: 72
+- v1 requirements: 85 total
+- Mapped to phases: 85
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-04-03*
-*Last updated: 2026-04-03 after initial definition*
+*Last updated: 2026-04-03 after roadmap creation*
