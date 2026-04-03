@@ -109,7 +109,7 @@ Inherited from Phase 1. Phase 5 uses the same 4 tokens and 2 weights. No new tok
 | Footer tagline | `text-sm` (14px) | 400 | 1.6 | DM Sans, stone-600 |
 | Footer link headings | `text-sm` (14px) | 700 | 1.6 | DM Sans, charcoal, uppercase, `tracking-wider` |
 | Footer links | `text-sm` (14px) | 400 | 1.6 | DM Sans, stone-600 |
-| Footer copyright | `text-xs` (12px) | 400 | 1.5 | DM Sans, stone-500 |
+| Footer copyright | `text-sm` (14px) | 400 | 1.6 | DM Sans, stone-500 |
 | Footer disclaimer | `text-sm` (14px) | 400 | 1.6 | DM Sans, stone-500 (existing DisclaimerBar style) |
 | Skip-to-content link | `text-sm` (14px) | 700 | 1.6 | DM Sans, visible only on focus |
 | Print article title | 24pt | 700 | 1.2 | Serif fallback (Georgia) for print legibility |
@@ -444,7 +444,7 @@ This replaces the need for any page-level adjustment since the header is fixed a
 | Property | Value |
 |----------|-------|
 | Container | `mt-6` |
-| Text | "2026 The Ledger. All rights reserved." -- `text-xs text-stone-500` |
+| Text | "2026 The Ledger. All rights reserved." -- `text-sm text-stone-500` |
 | Copyright symbol | Use the copyright symbol character directly |
 
 **Footer Links:**
