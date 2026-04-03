@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: verifying
-stopped_at: Phase 3 UI-SPEC approved
-last_updated: "2026-04-03T20:09:05.653Z"
+status: executing
+stopped_at: Completed 03-02-PLAN.md
+last_updated: "2026-04-03T20:30:50.559Z"
 last_activity: 2026-04-03
 progress:
   total_phases: 10
   completed_phases: 2
-  total_plans: 4
-  completed_plans: 4
+  total_plans: 7
+  completed_plans: 6
   percent: 0
 ---
 
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-03)
 
 **Core value:** Irish small business owners find clear, jargon-free answers to every accounting question they'd Google -- and trust this platform enough to sign up for the directory when it launches.
-**Current focus:** Phase 02 — content-pipeline
+**Current focus:** Phase 03 — article-page-template
 
 ## Current Position
 
-Phase: 3
-Plan: Not started
-Status: Phase complete — ready for verification
+Phase: 03 (article-page-template) — EXECUTING
+Plan: 3 of 3
+Status: Ready to execute
 Last activity: 2026-04-03
 
 Progress: [░░░░░░░░░░] 0%
@@ -56,6 +56,8 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 01 P02 | 2min | 3 tasks | 3 files |
 | Phase 02-01 P01 | 2min | 2 tasks | 8 files |
 | Phase 02-02 P02 | 5min | 2 tasks | 4 files |
+| Phase 03 P01 | 2min | 2 tasks | 8 files |
+| Phase 03 P02 | 2min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -76,6 +78,8 @@ Recent decisions affecting current work:
 - [Phase 02-02]: isPublished uses .slice(0,10) string comparison on both sides for UTC-safe date filtering
 - [Phase 02-02]: getReadingTime computes wordCount/200 not Velite metadata.readingTime (WPM rate may differ)
 - [Phase 02-02]: MDX frontmatter requires explicit slug field (Velite s.slug does not auto-derive from filename)
+- [Phase 03]: All article sub-components are pure server components (no use client)
+- [Phase 03]: CSS grid-rows accordion animation (grid-rows-[0fr]/[1fr]) over JS height for FAQ
 
 ### Pending Todos
 
@@ -88,6 +92,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-03T20:09:05.650Z
-Stopped at: Phase 3 UI-SPEC approved
-Resume file: .planning/phases/03-article-page-template/03-UI-SPEC.md
+Last session: 2026-04-03T20:30:50.555Z
+Stopped at: Completed 03-02-PLAN.md
+Resume file: None

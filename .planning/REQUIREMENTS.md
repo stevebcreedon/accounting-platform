@@ -29,12 +29,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [ ] **ART-01**: Article page template renders MDX content with all 10 sections: breadcrumbs, title, meta line, intro, TOC, body, key takeaways, FAQ, related articles, email CTA
 - [ ] **ART-02**: Auto-generated Table of Contents from H2 headings with anchor links
-- [ ] **ART-03**: KeyTakeaways MDX component: 3-5 bullet point summary box
+- [x] **ART-03**: KeyTakeaways MDX component: 3-5 bullet point summary box
 - [ ] **ART-04**: FAQSection MDX component with collapsible Q&A and JSON-LD FAQPage schema
 - [ ] **ART-05**: RelatedArticles component showing 2-3 cards from frontmatter relatedSlugs
-- [ ] **ART-06**: Breadcrumbs component: Home > Guides > {Category} > {Title}
-- [ ] **ART-07**: Meta line displaying published date, updated date, reading time, category pill
-- [ ] **ART-08**: "Last verified for [tax year]" badge on articles with updatedDate frontmatter
+- [x] **ART-06**: Breadcrumbs component: Home > Guides > {Category} > {Title}
+- [x] **ART-07**: Meta line displaying published date, updated date, reading time, category pill
+- [x] **ART-08**: "Last verified for [tax year]" badge on articles with updatedDate frontmatter
 
 ### Site Structure & Pages
 
@@ -192,12 +192,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-07 | Phase 2 | Complete |
 | ART-01 | Phase 3 | Pending |
 | ART-02 | Phase 3 | Pending |
-| ART-03 | Phase 3 | Pending |
+| ART-03 | Phase 3 | Complete |
 | ART-04 | Phase 3 | Pending |
 | ART-05 | Phase 3 | Pending |
-| ART-06 | Phase 3 | Pending |
-| ART-07 | Phase 3 | Pending |
-| ART-08 | Phase 3 | Pending |
+| ART-06 | Phase 3 | Complete |
+| ART-07 | Phase 3 | Complete |
+| ART-08 | Phase 3 | Complete |
 | PAGE-01 | Phase 4 | Pending |
 | PAGE-02 | Phase 4 | Pending |
 | PAGE-03 | Phase 4 | Pending |
