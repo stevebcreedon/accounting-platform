@@ -66,7 +66,11 @@ Plans:
   4. Related articles display 2-3 cards based on frontmatter relatedSlugs
   5. Meta line shows published date, updated date, reading time, category pill, and "Last verified" badge when updatedDate exists
   6. generateStaticParams pre-renders all published article pages at build time (CONT-04)
-**Plans**: TBD
+**Plans**: 3 plans
+Plans:
+- [ ] 03-01-PLAN.md — Server components: Breadcrumbs, MetaLine, KeyTakeaways, EmailCTAPlaceholder, date utilities, lucide-react + schema-dts install
+- [ ] 03-02-PLAN.md — Client components: Table of Contents with Intersection Observer, FAQ accordion with JSON-LD schema
+- [ ] 03-03-PLAN.md — Page assembly: RelatedArticles, /guides/[slug]/page.tsx with generateStaticParams, sample MDX updates, visual verification
 **UI hint**: yes
 
 ### Phase 4: Site Structure & Pages
@@ -165,7 +169,7 @@ Note: Phases 1 and 5 have no dependency between them. Phases 2-4 are the strict 
 |-------|----------------|--------|-----------|
 | 1. Project Scaffold | 0/2 | Planning complete | - |
 | 2. Content Pipeline | 2/2 | Complete   | 2026-04-03 |
-| 3. Article Page Template | 0/? | Not started | - |
+| 3. Article Page Template | 0/3 | Planning complete | - |
 | 4. Site Structure & Pages | 0/? | Not started | - |
 | 5. Navigation & Accessibility | 0/? | Not started | - |
 | 6. SEO Infrastructure | 0/? | Not started | - |
