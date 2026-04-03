@@ -10,10 +10,10 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Foundation & Scaffold
 
 - [x] **FOUND-01**: Next.js 14 App Router project initialized with TypeScript, Tailwind v3.4.x, and correct folder structure
-- [ ] **FOUND-02**: Tailwind config extended with custom brand colour palette, typography scale, and design tokens
+- [x] **FOUND-02**: Tailwind config extended with custom brand colour palette, typography scale, and design tokens
 - [x] **FOUND-03**: Root layout with Inter font loaded via next/font, responsive meta viewport, and favicon
-- [ ] **FOUND-04**: Brand identity system: fresh, distinctive palette (not original spec), minimal/sleek/interactive direction
-- [ ] **FOUND-05**: Global CSS with prose typography overrides for article content
+- [x] **FOUND-04**: Brand identity system: fresh, distinctive palette (not original spec), minimal/sleek/interactive direction
+- [x] **FOUND-05**: Global CSS with prose typography overrides for article content
 
 ### Content Pipeline
 
@@ -179,10 +179,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | FOUND-01 | Phase 1 | Complete |
-| FOUND-02 | Phase 1 | Pending |
+| FOUND-02 | Phase 1 | Complete |
 | FOUND-03 | Phase 1 | Complete |
-| FOUND-04 | Phase 1 | Pending |
-| FOUND-05 | Phase 1 | Pending |
+| FOUND-04 | Phase 1 | Complete |
+| FOUND-05 | Phase 1 | Complete |
 | CONT-01 | Phase 2 | Pending |
 | CONT-02 | Phase 2 | Pending |
 | CONT-03 | Phase 2 | Pending |

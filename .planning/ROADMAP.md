@@ -37,7 +37,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 Plans:
 - [x] 01-01-PLAN.md — Initialize Next.js 14 project with dependencies, font loading, root layout, and cn() utility
-- [ ] 01-02-PLAN.md — Configure Tailwind design tokens, prose typography overrides, and branded placeholder page
+- [x] 01-02-PLAN.md — Configure Tailwind design tokens, prose typography overrides, and branded placeholder page
 **UI hint**: yes
 
 ### Phase 2: Content Pipeline
