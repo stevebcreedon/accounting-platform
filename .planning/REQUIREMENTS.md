@@ -18,11 +18,11 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Content Pipeline
 
 - [x] **CONT-01**: Velite (or gray-matter fallback) configured with Zod schema validation for MDX frontmatter
-- [ ] **CONT-02**: MDX content pipeline: getAllGuides(), getGuideBySlug(), getGuidesByCategory(), getCategories() utility functions
-- [ ] **CONT-03**: Articles only render when publishDate <= current date (scheduled publishing)
+- [x] **CONT-02**: MDX content pipeline: getAllGuides(), getGuideBySlug(), getGuidesByCategory(), getCategories() utility functions
+- [x] **CONT-03**: Articles only render when publishDate <= current date (scheduled publishing)
 - [ ] **CONT-04**: generateStaticParams pre-renders all published article pages at build time
 - [x] **CONT-05**: 8 content categories configured: Getting Started, Business Structures, Tax Obligations, Accounting Basics, Choosing an Accountant, Costs & Fees, Compliance & Deadlines, Industry Guides
-- [ ] **CONT-06**: Pillar articles visually distinguished from spoke articles (badge, larger card)
+- [x] **CONT-06**: Pillar articles visually distinguished from spoke articles (badge, larger card)
 - [x] **CONT-07**: Reading time calculated from word count (200 wpm) and displayed on articles
 
 ### Article Pages
@@ -184,11 +184,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FOUND-04 | Phase 1 | Complete |
 | FOUND-05 | Phase 1 | Complete |
 | CONT-01 | Phase 2 | Complete |
-| CONT-02 | Phase 2 | Pending |
-| CONT-03 | Phase 2 | Pending |
+| CONT-02 | Phase 2 | Complete |
+| CONT-03 | Phase 2 | Complete |
 | CONT-04 | Phase 3 | Pending |
 | CONT-05 | Phase 2 | Complete |
-| CONT-06 | Phase 2 | Pending |
+| CONT-06 | Phase 2 | Complete |
 | CONT-07 | Phase 2 | Complete |
 | ART-01 | Phase 3 | Pending |
 | ART-02 | Phase 3 | Pending |

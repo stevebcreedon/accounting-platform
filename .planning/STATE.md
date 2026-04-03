@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: executing
-stopped_at: Completed 02-01-PLAN.md
-last_updated: "2026-04-03T19:15:16.230Z"
+status: verifying
+stopped_at: Completed 02-02-PLAN.md
+last_updated: "2026-04-03T19:21:52.907Z"
 last_activity: 2026-04-03
 progress:
   total_phases: 10
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 4
-  completed_plans: 3
+  completed_plans: 4
   percent: 0
 ---
 
@@ -27,7 +27,7 @@ See: .planning/PROJECT.md (updated 2026-04-03)
 
 Phase: 02 (content-pipeline) — EXECUTING
 Plan: 2 of 2
-Status: Ready to execute
+Status: Phase complete — ready for verification
 Last activity: 2026-04-03
 
 Progress: [░░░░░░░░░░] 0%
@@ -55,6 +55,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 01 P01 | 4min | 2 tasks | 16 files |
 | Phase 01 P02 | 2min | 3 tasks | 3 files |
 | Phase 02-01 P01 | 2min | 2 tasks | 8 files |
+| Phase 02-02 P02 | 5min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -72,6 +73,9 @@ Recent decisions affecting current work:
 - [Phase 01]: article-content CSS class established as standard wrapper for all MDX article pages
 - [Phase 02-01]: Velite strict Zod schema with publishDate as single publishing gate (no draft status field)
 - [Phase 02-01]: #site/content path alias for Velite generated output (Node.js subpath import pattern)
+- [Phase 02-02]: isPublished uses .slice(0,10) string comparison on both sides for UTC-safe date filtering
+- [Phase 02-02]: getReadingTime computes wordCount/200 not Velite metadata.readingTime (WPM rate may differ)
+- [Phase 02-02]: MDX frontmatter requires explicit slug field (Velite s.slug does not auto-derive from filename)
 
 ### Pending Todos
 
@@ -84,6 +88,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-03T19:15:16.227Z
-Stopped at: Completed 02-01-PLAN.md
+Last session: 2026-04-03T19:21:52.903Z
+Stopped at: Completed 02-02-PLAN.md
 Resume file: None

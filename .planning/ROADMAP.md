@@ -13,7 +13,7 @@ This roadmap delivers a content-first SEO platform for Irish small business owne
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [ ] **Phase 1: Project Scaffold** - Next.js 14 project with brand identity, Tailwind config, and root layout
-- [ ] **Phase 2: Content Pipeline** - Velite MDX pipeline with Zod validation, content queries, and scheduled publishing
+- [x] **Phase 2: Content Pipeline** - Velite MDX pipeline with Zod validation, content queries, and scheduled publishing (completed 2026-04-03)
 - [ ] **Phase 3: Article Page Template** - Full article renderer with TOC, FAQ, breadcrumbs, key takeaways, and related articles
 - [ ] **Phase 4: Site Structure & Pages** - Homepage, guides hub, category archives, find-accountant placeholder, and static pages
 - [ ] **Phase 5: Navigation & Accessibility** - Header, footer, mobile-responsive layout shell, keyboard navigation, and print styles
@@ -53,7 +53,7 @@ Plans:
 **Plans**: 2 plans
 Plans:
 - [x] 02-01-PLAN.md — Velite MDX pipeline with Zod schema, Next.js integration, categories config, and MDX renderer
-- [ ] 02-02-PLAN.md — Content query functions with scheduled publishing and 3 sample Irish accounting articles
+- [x] 02-02-PLAN.md — Content query functions with scheduled publishing and 3 sample Irish accounting articles
 
 ### Phase 3: Article Page Template
 **Goal**: Visitors reading an article see a complete, structured page with navigation aids, summaries, FAQs, and related content
@@ -164,7 +164,7 @@ Note: Phases 1 and 5 have no dependency between them. Phases 2-4 are the strict 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Project Scaffold | 0/2 | Planning complete | - |
-| 2. Content Pipeline | 1/2 | In Progress|  |
+| 2. Content Pipeline | 2/2 | Complete   | 2026-04-03 |
 | 3. Article Page Template | 0/? | Not started | - |
 | 4. Site Structure & Pages | 0/? | Not started | - |
 | 5. Navigation & Accessibility | 0/? | Not started | - |
