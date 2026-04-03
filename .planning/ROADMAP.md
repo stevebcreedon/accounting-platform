@@ -102,7 +102,7 @@ Plans:
   5. Semantic HTML, sufficient color contrast, and focus indicators meet WCAG 2.1 AA baseline
 **Plans**: 2 plans
 Plans:
-- [ ] 05-01-PLAN.md — Create layout components (skip-to-content, header, navigation, mobile menu, footer)
+- [x] 05-01-PLAN.md — Create layout components (skip-to-content, header, navigation, mobile menu, footer)
 - [ ] 05-02-PLAN.md — Wire layout into root layout, migrate 9 pages, add print styles, verify accessibility
 **UI hint**: yes
 
@@ -178,7 +178,7 @@ Note: Phases 1 and 5 have no dependency between them. Phases 2-4 are the strict 
 | 2. Content Pipeline | 2/2 | Complete   | 2026-04-03 |
 | 3. Article Page Template | 2/3 | In Progress|  |
 | 4. Site Structure & Pages | 3/3 | Complete   | 2026-04-03 |
-| 5. Navigation & Accessibility | 0/2 | Planning complete | - |
+| 5. Navigation & Accessibility | 1/2 | In Progress|  |
 | 6. SEO Infrastructure | 0/? | Not started | - |
 | 7. Email Capture | 0/? | Not started | - |
 | 8. Custom Analytics | 0/? | Not started | - |

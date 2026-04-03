@@ -51,10 +51,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Navigation & Layout
 
-- [ ] **NAV-01**: Header with logo (placeholder), navigation links, mobile hamburger menu
-- [ ] **NAV-02**: Footer with navigation, disclaimer, privacy/terms links, brand info
+- [x] **NAV-01**: Header with logo (placeholder), navigation links, mobile hamburger menu
+- [x] **NAV-02**: Footer with navigation, disclaimer, privacy/terms links, brand info
 - [ ] **NAV-03**: Mobile-first responsive design across all pages
-- [ ] **NAV-04**: Skip-to-content link and keyboard navigation support
+- [x] **NAV-04**: Skip-to-content link and keyboard navigation support
 
 ### SEO Infrastructure
 
@@ -208,10 +208,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PAGE-08 | Phase 4 | Complete |
 | PAGE-09 | Phase 4 | Complete |
 | PAGE-10 | Phase 4 | Complete |
-| NAV-01 | Phase 5 | Pending |
-| NAV-02 | Phase 5 | Pending |
+| NAV-01 | Phase 5 | Complete |
+| NAV-02 | Phase 5 | Complete |
 | NAV-03 | Phase 5 | Pending |
-| NAV-04 | Phase 5 | Pending |
+| NAV-04 | Phase 5 | Complete |
 | PERF-05 | Phase 5 | Pending |
 | PERF-06 | Phase 5 | Pending |
 | SEO-01 | Phase 6 | Pending |
