@@ -41,12 +41,12 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **PAGE-01**: Homepage with hero section, latest articles (6), category grid (8), email capture section
 - [x] **PAGE-02**: Guides hub page with category filter pills (horizontally scrollable on mobile), article grid, pillar badges
 - [x] **PAGE-03**: Category archive pages at /guides/category/[slug] with filtered articles
-- [ ] **PAGE-04**: Find-Accountant placeholder page at /find-accountant with waitlist email capture and feature preview
-- [ ] **PAGE-05**: About page (brand mission and platform purpose -- no personal bio)
-- [ ] **PAGE-06**: Contact page with contact form or email
-- [ ] **PAGE-07**: Privacy policy page (GDPR-compliant, references Irish DPC as supervisory authority)
-- [ ] **PAGE-08**: Terms of service page
-- [ ] **PAGE-09**: Custom 404 page with navigation and search/category links
+- [x] **PAGE-04**: Find-Accountant placeholder page at /find-accountant with waitlist email capture and feature preview
+- [x] **PAGE-05**: About page (brand mission and platform purpose -- no personal bio)
+- [x] **PAGE-06**: Contact page with contact form or email
+- [x] **PAGE-07**: Privacy policy page (GDPR-compliant, references Irish DPC as supervisory authority)
+- [x] **PAGE-08**: Terms of service page
+- [x] **PAGE-09**: Custom 404 page with navigation and search/category links
 - [x] **PAGE-10**: Accounting disclaimer in footer and per-article notice ("educational, not professional advice")
 
 ### Navigation & Layout
@@ -201,12 +201,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PAGE-01 | Phase 4 | Complete |
 | PAGE-02 | Phase 4 | Complete |
 | PAGE-03 | Phase 4 | Complete |
-| PAGE-04 | Phase 4 | Pending |
-| PAGE-05 | Phase 4 | Pending |
-| PAGE-06 | Phase 4 | Pending |
-| PAGE-07 | Phase 4 | Pending |
-| PAGE-08 | Phase 4 | Pending |
-| PAGE-09 | Phase 4 | Pending |
+| PAGE-04 | Phase 4 | Complete |
+| PAGE-05 | Phase 4 | Complete |
+| PAGE-06 | Phase 4 | Complete |
+| PAGE-07 | Phase 4 | Complete |
+| PAGE-08 | Phase 4 | Complete |
+| PAGE-09 | Phase 4 | Complete |
 | PAGE-10 | Phase 4 | Complete |
 | NAV-01 | Phase 5 | Pending |
 | NAV-02 | Phase 5 | Pending |

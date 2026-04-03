@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 1: Project Scaffold** - Next.js 14 project with brand identity, Tailwind config, and root layout
 - [x] **Phase 2: Content Pipeline** - Velite MDX pipeline with Zod validation, content queries, and scheduled publishing (completed 2026-04-03)
 - [ ] **Phase 3: Article Page Template** - Full article renderer with TOC, FAQ, breadcrumbs, key takeaways, and related articles
-- [ ] **Phase 4: Site Structure & Pages** - Homepage, guides hub, category archives, find-accountant placeholder, and static pages
+- [x] **Phase 4: Site Structure & Pages** - Homepage, guides hub, category archives, find-accountant placeholder, and static pages (completed 2026-04-03)
 - [ ] **Phase 5: Navigation & Accessibility** - Header, footer, mobile-responsive layout shell, keyboard navigation, and print styles
 - [ ] **Phase 6: SEO Infrastructure** - JSON-LD schemas, metadata, sitemap, robots.txt, canonical URLs, OG images, and AI search optimization
 - [ ] **Phase 7: Email Capture** - GDPR-compliant double opt-in email system with Supabase and Resend
@@ -87,7 +87,7 @@ Plans:
 Plans:
 - [x] 04-01-PLAN.md — Shared components (ArticleCard, CategoryCard, DisclaimerBar) and homepage
 - [x] 04-02-PLAN.md — Guides hub with filter pills and category archive pages
-- [ ] 04-03-PLAN.md — Find-accountant placeholder, static pages (about, contact, privacy, terms), and 404
+- [x] 04-03-PLAN.md — Find-accountant placeholder, static pages (about, contact, privacy, terms), and 404
 **UI hint**: yes
 
 ### Phase 5: Navigation & Accessibility
@@ -174,7 +174,7 @@ Note: Phases 1 and 5 have no dependency between them. Phases 2-4 are the strict 
 | 1. Project Scaffold | 0/2 | Planning complete | - |
 | 2. Content Pipeline | 2/2 | Complete   | 2026-04-03 |
 | 3. Article Page Template | 2/3 | In Progress|  |
-| 4. Site Structure & Pages | 0/3 | Planning complete | - |
+| 4. Site Structure & Pages | 3/3 | Complete   | 2026-04-03 |
 | 5. Navigation & Accessibility | 0/? | Not started | - |
 | 6. SEO Infrastructure | 0/? | Not started | - |
 | 7. Email Capture | 0/? | Not started | - |
