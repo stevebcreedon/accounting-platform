@@ -83,7 +83,11 @@ Plans:
   3. Category archive pages at /guides/category/[slug] show only articles in that category
   4. Find-accountant page at /find-accountant shows a waitlist email capture placeholder and feature preview
   5. About, Contact, Privacy (referencing Irish DPC), Terms, and 404 pages all render with correct content
-**Plans**: TBD
+**Plans**: 3 plans
+Plans:
+- [ ] 04-01-PLAN.md — Shared components (ArticleCard, CategoryCard, DisclaimerBar) and homepage
+- [ ] 04-02-PLAN.md — Guides hub with filter pills and category archive pages
+- [ ] 04-03-PLAN.md — Find-accountant placeholder, static pages (about, contact, privacy, terms), and 404
 **UI hint**: yes
 
 ### Phase 5: Navigation & Accessibility
@@ -170,7 +174,7 @@ Note: Phases 1 and 5 have no dependency between them. Phases 2-4 are the strict 
 | 1. Project Scaffold | 0/2 | Planning complete | - |
 | 2. Content Pipeline | 2/2 | Complete   | 2026-04-03 |
 | 3. Article Page Template | 2/3 | In Progress|  |
-| 4. Site Structure & Pages | 0/? | Not started | - |
+| 4. Site Structure & Pages | 0/3 | Planning complete | - |
 | 5. Navigation & Accessibility | 0/? | Not started | - |
 | 6. SEO Infrastructure | 0/? | Not started | - |
 | 7. Email Capture | 0/? | Not started | - |
