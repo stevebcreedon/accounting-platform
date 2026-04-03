@@ -4,7 +4,7 @@ import { ChevronRight } from 'lucide-react';
 interface BreadcrumbsProps {
   categorySlug: string;
   categoryName: string;
-  articleTitle: string;
+  articleTitle?: string;
 }
 
 export function Breadcrumbs({
@@ -34,15 +34,17 @@ export function Breadcrumbs({
             </Link>
           </li>
         ))}
-        <li className="flex items-center gap-2">
-          <ChevronRight size={14} className="text-stone-400" aria-hidden="true" />
-          <span
-            className="text-sm text-stone-600 max-w-[200px] truncate"
-            aria-current="page"
-          >
-            {articleTitle}
-          </span>
-        </li>
+        {articleTitle && (
+          <li className="flex items-center gap-2">
+            <ChevronRight size={14} className="text-stone-400" aria-hidden="true" />
+            <span
+              className="text-sm text-stone-600 max-w-[200px] truncate"
+              aria-current="page"
+            >
+              {articleTitle}
+            </span>
+          </li>
+        )}
       </ol>
     </nav>
   );
