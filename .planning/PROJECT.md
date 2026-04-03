@@ -104,4 +104,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-03 — Phase 1 (Project Scaffold) complete: Next.js 14 scaffold with brand design tokens, font loading, and editorial typography*
+*Last updated: 2026-04-03 — Phase 2 (Content Pipeline) complete: Velite MDX pipeline with Zod schema, 7 query functions, scheduled publishing, 3 real Irish accounting articles*
