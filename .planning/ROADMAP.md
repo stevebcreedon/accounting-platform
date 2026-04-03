@@ -50,7 +50,10 @@ Plans:
   3. An article with a future publishDate does not appear on the site; changing it to today makes it appear after rebuild
   4. All 8 categories are configured and queryable, and pillar articles are distinguishable from spoke articles in query results
   5. Reading time is calculated and available in article metadata
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 02-01-PLAN.md — Velite MDX pipeline with Zod schema, Next.js integration, categories config, and MDX renderer
+- [ ] 02-02-PLAN.md — Content query functions with scheduled publishing and 3 sample Irish accounting articles
 
 ### Phase 3: Article Page Template
 **Goal**: Visitors reading an article see a complete, structured page with navigation aids, summaries, FAQs, and related content
