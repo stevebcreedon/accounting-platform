@@ -28,9 +28,9 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Article Pages
 
 - [ ] **ART-01**: Article page template renders MDX content with all 10 sections: breadcrumbs, title, meta line, intro, TOC, body, key takeaways, FAQ, related articles, email CTA
-- [ ] **ART-02**: Auto-generated Table of Contents from H2 headings with anchor links
+- [x] **ART-02**: Auto-generated Table of Contents from H2 headings with anchor links
 - [x] **ART-03**: KeyTakeaways MDX component: 3-5 bullet point summary box
-- [ ] **ART-04**: FAQSection MDX component with collapsible Q&A and JSON-LD FAQPage schema
+- [x] **ART-04**: FAQSection MDX component with collapsible Q&A and JSON-LD FAQPage schema
 - [ ] **ART-05**: RelatedArticles component showing 2-3 cards from frontmatter relatedSlugs
 - [x] **ART-06**: Breadcrumbs component: Home > Guides > {Category} > {Title}
 - [x] **ART-07**: Meta line displaying published date, updated date, reading time, category pill
@@ -191,9 +191,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-06 | Phase 2 | Complete |
 | CONT-07 | Phase 2 | Complete |
 | ART-01 | Phase 3 | Pending |
-| ART-02 | Phase 3 | Pending |
+| ART-02 | Phase 3 | Complete |
 | ART-03 | Phase 3 | Complete |
-| ART-04 | Phase 3 | Pending |
+| ART-04 | Phase 3 | Complete |
 | ART-05 | Phase 3 | Pending |
 | ART-06 | Phase 3 | Complete |
 | ART-07 | Phase 3 | Complete |
