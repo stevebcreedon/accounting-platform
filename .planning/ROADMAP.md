@@ -86,7 +86,7 @@ Plans:
 **Plans**: 3 plans
 Plans:
 - [x] 04-01-PLAN.md — Shared components (ArticleCard, CategoryCard, DisclaimerBar) and homepage
-- [ ] 04-02-PLAN.md — Guides hub with filter pills and category archive pages
+- [x] 04-02-PLAN.md — Guides hub with filter pills and category archive pages
 - [ ] 04-03-PLAN.md — Find-accountant placeholder, static pages (about, contact, privacy, terms), and 404
 **UI hint**: yes
 

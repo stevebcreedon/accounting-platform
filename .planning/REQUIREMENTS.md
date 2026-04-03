@@ -39,8 +39,8 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Site Structure & Pages
 
 - [x] **PAGE-01**: Homepage with hero section, latest articles (6), category grid (8), email capture section
-- [ ] **PAGE-02**: Guides hub page with category filter pills (horizontally scrollable on mobile), article grid, pillar badges
-- [ ] **PAGE-03**: Category archive pages at /guides/category/[slug] with filtered articles
+- [x] **PAGE-02**: Guides hub page with category filter pills (horizontally scrollable on mobile), article grid, pillar badges
+- [x] **PAGE-03**: Category archive pages at /guides/category/[slug] with filtered articles
 - [ ] **PAGE-04**: Find-Accountant placeholder page at /find-accountant with waitlist email capture and feature preview
 - [ ] **PAGE-05**: About page (brand mission and platform purpose -- no personal bio)
 - [ ] **PAGE-06**: Contact page with contact form or email
@@ -199,8 +199,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | ART-07 | Phase 3 | Complete |
 | ART-08 | Phase 3 | Complete |
 | PAGE-01 | Phase 4 | Complete |
-| PAGE-02 | Phase 4 | Pending |
-| PAGE-03 | Phase 4 | Pending |
+| PAGE-02 | Phase 4 | Complete |
+| PAGE-03 | Phase 4 | Complete |
 | PAGE-04 | Phase 4 | Pending |
 | PAGE-05 | Phase 4 | Pending |
 | PAGE-06 | Phase 4 | Pending |

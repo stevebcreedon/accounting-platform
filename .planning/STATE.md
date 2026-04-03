@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 04-01-PLAN.md
-last_updated: "2026-04-03T21:44:54.380Z"
+stopped_at: Completed 04-02-PLAN.md
+last_updated: "2026-04-03T21:47:58.751Z"
 last_activity: 2026-04-03
 progress:
   total_phases: 10
   completed_phases: 3
   total_plans: 10
-  completed_plans: 8
+  completed_plans: 9
   percent: 0
 ---
 
@@ -26,7 +26,7 @@ See: .planning/PROJECT.md (updated 2026-04-03)
 ## Current Position
 
 Phase: 04 (site-structure-pages) — EXECUTING
-Plan: 2 of 3
+Plan: 3 of 3
 Status: Ready to execute
 Last activity: 2026-04-03
 
@@ -60,6 +60,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 03 P02 | 2min | 2 tasks | 4 files |
 | Phase 03 P03 | 3min | 3 tasks | 4 files |
 | Phase 04 P01 | 2min | 2 tasks | 5 files |
+| Phase 04 P02 | 1min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -84,6 +85,8 @@ Recent decisions affecting current work:
 - [Phase 03]: CSS grid-rows accordion animation (grid-rows-[0fr]/[1fr]) over JS height for FAQ
 - [Phase 03]: Article page is pure server component with synchronous Velite data resolution
 - [Phase 04]: Shared components in src/components/shared/ as pure server components (no use client)
+- [Phase 04]: Breadcrumbs articleTitle made optional to support category archive pages
+- [Phase 04]: FilterPills is the only use client component in Phase 4; all pages are server components
 
 ### Pending Todos
 
@@ -96,6 +99,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-03T21:44:54.377Z
-Stopped at: Completed 04-01-PLAN.md
+Last session: 2026-04-03T21:47:58.748Z
+Stopped at: Completed 04-02-PLAN.md
 Resume file: None
