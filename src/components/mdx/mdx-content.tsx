@@ -1,4 +1,5 @@
 import * as runtime from 'react/jsx-runtime';
+import { KeyTakeaways } from '@/components/article/key-takeaways';
 
 const useMDXComponent = (code: string) => {
   const fn = new Function(code);
@@ -6,7 +7,8 @@ const useMDXComponent = (code: string) => {
 };
 
 const sharedComponents = {
-  // Custom MDX components will be added in Phase 3 (KeyTakeaways, FAQSection, etc.)
+  KeyTakeaways,
+  // FAQSection will be added in Plan 02 when the FAQ client component is built
 };
 
 interface MDXContentProps {
