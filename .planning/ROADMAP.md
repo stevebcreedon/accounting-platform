@@ -34,7 +34,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. The root layout renders with Inter font, responsive viewport meta, and favicon
   3. Tailwind config includes all custom design tokens (colors, spacing, typography scale) matching the brand direction
   4. Global prose typography styles render correctly for long-form article content
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 01-01-PLAN.md — Initialize Next.js 14 project with dependencies, font loading, root layout, and cn() utility
+- [ ] 01-02-PLAN.md — Configure Tailwind design tokens, prose typography overrides, and branded placeholder page
 **UI hint**: yes
 
 ### Phase 2: Content Pipeline
@@ -156,7 +159,7 @@ Note: Phases 1 and 5 have no dependency between them. Phases 2-4 are the strict 
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Project Scaffold | 0/? | Not started | - |
+| 1. Project Scaffold | 0/2 | Planning complete | - |
 | 2. Content Pipeline | 0/? | Not started | - |
 | 3. Article Page Template | 0/? | Not started | - |
 | 4. Site Structure & Pages | 0/? | Not started | - |
