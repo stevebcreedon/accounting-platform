@@ -20,18 +20,18 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **CONT-01**: Velite (or gray-matter fallback) configured with Zod schema validation for MDX frontmatter
 - [x] **CONT-02**: MDX content pipeline: getAllGuides(), getGuideBySlug(), getGuidesByCategory(), getCategories() utility functions
 - [x] **CONT-03**: Articles only render when publishDate <= current date (scheduled publishing)
-- [ ] **CONT-04**: generateStaticParams pre-renders all published article pages at build time
+- [x] **CONT-04**: generateStaticParams pre-renders all published article pages at build time
 - [x] **CONT-05**: 8 content categories configured: Getting Started, Business Structures, Tax Obligations, Accounting Basics, Choosing an Accountant, Costs & Fees, Compliance & Deadlines, Industry Guides
 - [x] **CONT-06**: Pillar articles visually distinguished from spoke articles (badge, larger card)
 - [x] **CONT-07**: Reading time calculated from word count (200 wpm) and displayed on articles
 
 ### Article Pages
 
-- [ ] **ART-01**: Article page template renders MDX content with all 10 sections: breadcrumbs, title, meta line, intro, TOC, body, key takeaways, FAQ, related articles, email CTA
+- [x] **ART-01**: Article page template renders MDX content with all 10 sections: breadcrumbs, title, meta line, intro, TOC, body, key takeaways, FAQ, related articles, email CTA
 - [x] **ART-02**: Auto-generated Table of Contents from H2 headings with anchor links
 - [x] **ART-03**: KeyTakeaways MDX component: 3-5 bullet point summary box
 - [x] **ART-04**: FAQSection MDX component with collapsible Q&A and JSON-LD FAQPage schema
-- [ ] **ART-05**: RelatedArticles component showing 2-3 cards from frontmatter relatedSlugs
+- [x] **ART-05**: RelatedArticles component showing 2-3 cards from frontmatter relatedSlugs
 - [x] **ART-06**: Breadcrumbs component: Home > Guides > {Category} > {Title}
 - [x] **ART-07**: Meta line displaying published date, updated date, reading time, category pill
 - [x] **ART-08**: "Last verified for [tax year]" badge on articles with updatedDate frontmatter
@@ -186,15 +186,15 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-01 | Phase 2 | Complete |
 | CONT-02 | Phase 2 | Complete |
 | CONT-03 | Phase 2 | Complete |
-| CONT-04 | Phase 3 | Pending |
+| CONT-04 | Phase 3 | Complete |
 | CONT-05 | Phase 2 | Complete |
 | CONT-06 | Phase 2 | Complete |
 | CONT-07 | Phase 2 | Complete |
-| ART-01 | Phase 3 | Pending |
+| ART-01 | Phase 3 | Complete |
 | ART-02 | Phase 3 | Complete |
 | ART-03 | Phase 3 | Complete |
 | ART-04 | Phase 3 | Complete |
-| ART-05 | Phase 3 | Pending |
+| ART-05 | Phase 3 | Complete |
 | ART-06 | Phase 3 | Complete |
 | ART-07 | Phase 3 | Complete |
 | ART-08 | Phase 3 | Complete |

@@ -70,7 +70,7 @@ Plans:
 Plans:
 - [x] 03-01-PLAN.md — Server components: Breadcrumbs, MetaLine, KeyTakeaways, EmailCTAPlaceholder, date utilities, lucide-react + schema-dts install
 - [x] 03-02-PLAN.md — Client components: Table of Contents with Intersection Observer, FAQ accordion with JSON-LD schema
-- [ ] 03-03-PLAN.md — Page assembly: RelatedArticles, /guides/[slug]/page.tsx with generateStaticParams, sample MDX updates, visual verification
+- [x] 03-03-PLAN.md — Page assembly: RelatedArticles, /guides/[slug]/page.tsx with generateStaticParams, sample MDX updates, visual verification
 **UI hint**: yes
 
 ### Phase 4: Site Structure & Pages
