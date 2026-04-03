@@ -186,7 +186,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-01 | Phase 2 | Pending |
 | CONT-02 | Phase 2 | Pending |
 | CONT-03 | Phase 2 | Pending |
-| CONT-04 | Phase 2 | Pending |
+| CONT-04 | Phase 3 | Pending |
 | CONT-05 | Phase 2 | Pending |
 | CONT-06 | Phase 2 | Pending |
 | CONT-07 | Phase 2 | Pending |

@@ -43,12 +43,12 @@ Plans:
 ### Phase 2: Content Pipeline
 **Goal**: MDX articles with validated frontmatter compile at build time and only appear when their publish date arrives
 **Depends on**: Phase 1
-**Requirements**: CONT-01, CONT-02, CONT-03, CONT-04, CONT-05, CONT-06, CONT-07
+**Requirements**: CONT-01, CONT-02, CONT-03, CONT-05, CONT-06, CONT-07
 **Success Criteria** (what must be TRUE):
   1. A sample MDX article with complete frontmatter builds successfully with Zod schema validation catching any malformed fields
   2. Content query functions (getAllGuides, getGuideBySlug, getGuidesByCategory, getCategories) return typed data correctly
   3. An article with a future publishDate does not appear on the site; changing it to today makes it appear after rebuild
-  4. All 8 categories are configured and queryable, and pillar articles are distinguishable from spoke articles in query results
+  4. All 8 categories are configured and queryable, and pillar articles are distinguishable from spoke articles in query results (data layer; visual distinction ships in Phase 3)
   5. Reading time is calculated and available in article metadata
 **Plans**: 2 plans
 Plans:
@@ -58,13 +58,14 @@ Plans:
 ### Phase 3: Article Page Template
 **Goal**: Visitors reading an article see a complete, structured page with navigation aids, summaries, FAQs, and related content
 **Depends on**: Phase 2
-**Requirements**: ART-01, ART-02, ART-03, ART-04, ART-05, ART-06, ART-07, ART-08
+**Requirements**: ART-01, ART-02, ART-03, ART-04, ART-05, ART-06, ART-07, ART-08, CONT-04
 **Success Criteria** (what must be TRUE):
   1. An article page renders all 10 sections: breadcrumbs, title, meta line, intro, TOC, body, key takeaways, FAQ, related articles, email CTA placeholder
   2. The Table of Contents auto-generates from H2 headings and anchor links scroll to the correct section
   3. The FAQ section renders collapsible Q&A items
   4. Related articles display 2-3 cards based on frontmatter relatedSlugs
   5. Meta line shows published date, updated date, reading time, category pill, and "Last verified" badge when updatedDate exists
+  6. generateStaticParams pre-renders all published article pages at build time (CONT-04)
 **Plans**: TBD
 **UI hint**: yes
 
@@ -163,7 +164,7 @@ Note: Phases 1 and 5 have no dependency between them. Phases 2-4 are the strict 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Project Scaffold | 0/2 | Planning complete | - |
-| 2. Content Pipeline | 0/? | Not started | - |
+| 2. Content Pipeline | 0/2 | Planning complete | - |
 | 3. Article Page Template | 0/? | Not started | - |
 | 4. Site Structure & Pages | 0/? | Not started | - |
 | 5. Navigation & Accessibility | 0/? | Not started | - |
