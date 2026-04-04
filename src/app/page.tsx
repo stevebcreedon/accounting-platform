@@ -6,6 +6,8 @@ import { getCategoryBySlug, CATEGORIES } from '@/lib/content/categories';
 import { ArticleCard } from '@/components/shared/article-card';
 import { CategoryCard } from '@/components/shared/category-card';
 import { EmailCTAPlaceholder } from '@/components/article/email-cta-placeholder';
+import { JsonLd } from '@/components/seo/json-ld';
+import { buildOrganisationSchema } from '@/lib/seo/schemas';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/' },
@@ -16,8 +18,11 @@ export const metadata: Metadata = {
 export default function Home() {
   const latestGuides = getAllGuides().slice(0, 6);
 
+  const orgSchema = buildOrganisationSchema();
+
   return (
     <>
+      <JsonLd data={orgSchema} />
       {/* Hero */}
       <section className="max-w-3xl mx-auto text-center py-18 px-6 md:px-8">
         <h1 className="font-heading text-h1 md:text-[3rem] lg:text-[3.5rem] text-charcoal leading-[1.1]">

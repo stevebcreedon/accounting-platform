@@ -9,6 +9,8 @@ import { TableOfContents } from '@/components/article/table-of-contents';
 import { EmailCTAPlaceholder } from '@/components/article/email-cta-placeholder';
 import { RelatedArticles } from '@/components/article/related-articles';
 import { MDXContent } from '@/components/mdx/mdx-content';
+import { JsonLd } from '@/components/seo/json-ld';
+import { buildArticleSchema, buildBreadcrumbSchema } from '@/lib/seo/schemas';
 
 type Props = { params: { slug: string } };
 
@@ -64,8 +66,19 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
       readingTime: getReadingTime(g),
     }));
 
+  const articleSchema = buildArticleSchema(guide);
+  const breadcrumbSchema = buildBreadcrumbSchema(
+    guide.category,
+    category?.name ?? guide.category,
+    guide.title,
+    guide.slug
+  );
+
   return (
-    <article className="pt-12 pb-12">
+    <>
+      <JsonLd data={articleSchema} />
+      <JsonLd data={breadcrumbSchema} />
+      <article className="pt-12 pb-12">
       {/* Full-width container for breadcrumbs */}
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <Breadcrumbs
@@ -135,5 +148,6 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
         </div>
       )}
     </article>
+    </>
   );
 }
