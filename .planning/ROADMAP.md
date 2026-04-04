@@ -103,7 +103,7 @@ Plans:
 **Plans**: 2 plans
 Plans:
 - [x] 05-01-PLAN.md — Create layout components (skip-to-content, header, navigation, mobile menu, footer)
-- [ ] 05-02-PLAN.md — Wire layout into root layout, migrate 9 pages, add print styles, verify accessibility
+- [x] 05-02-PLAN.md — Wire layout into root layout, migrate 9 pages, add print styles, verify accessibility
 **UI hint**: yes
 
 ### Phase 6: SEO Infrastructure

@@ -53,7 +53,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **NAV-01**: Header with logo (placeholder), navigation links, mobile hamburger menu
 - [x] **NAV-02**: Footer with navigation, disclaimer, privacy/terms links, brand info
-- [ ] **NAV-03**: Mobile-first responsive design across all pages
+- [x] **NAV-03**: Mobile-first responsive design across all pages
 - [x] **NAV-04**: Skip-to-content link and keyboard navigation support
 
 ### SEO Infrastructure
@@ -118,8 +118,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **PERF-02**: Static site generation (SSG) for all content pages
 - [ ] **PERF-03**: Image optimization via next/image where applicable
 - [ ] **PERF-04**: Font optimization via next/font (prevent layout shift)
-- [ ] **PERF-05**: WCAG 2.1 AA baseline: semantic HTML, color contrast, focus indicators, alt text
-- [ ] **PERF-06**: Print-friendly article styles (@media print)
+- [x] **PERF-05**: WCAG 2.1 AA baseline: semantic HTML, color contrast, focus indicators, alt text
+- [x] **PERF-06**: Print-friendly article styles (@media print)
 
 ### Deployment
 
@@ -210,10 +210,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PAGE-10 | Phase 4 | Complete |
 | NAV-01 | Phase 5 | Complete |
 | NAV-02 | Phase 5 | Complete |
-| NAV-03 | Phase 5 | Pending |
+| NAV-03 | Phase 5 | Complete |
 | NAV-04 | Phase 5 | Complete |
-| PERF-05 | Phase 5 | Pending |
-| PERF-06 | Phase 5 | Pending |
+| PERF-05 | Phase 5 | Complete |
+| PERF-06 | Phase 5 | Complete |
 | SEO-01 | Phase 6 | Pending |
 | SEO-02 | Phase 6 | Pending |
 | SEO-03 | Phase 6 | Pending |
