@@ -4,6 +4,14 @@ export const metadata: Metadata = {
   title: 'Contact',
   description:
     'Get in touch with The Ledger. Questions, suggestions, or corrections — we would love to hear from you.',
+  alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact',
+    description:
+      'Get in touch with The Ledger. Questions, suggestions, or corrections — we would love to hear from you.',
+    type: 'website',
+  },
+  twitter: { card: 'summary' },
 };
 
 export default function ContactPage() {

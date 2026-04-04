@@ -6,6 +6,14 @@ export const metadata: Metadata = {
   title: 'Find an Accountant in Ireland',
   description:
     "Search Ireland's most comprehensive accountant directory by location, specialisation, and reviews. Coming soon.",
+  alternates: { canonical: '/find-accountant' },
+  openGraph: {
+    title: 'Find an Accountant in Ireland',
+    description:
+      "Search Ireland's most comprehensive accountant directory by location, specialisation, and reviews. Coming soon.",
+    type: 'website',
+  },
+  twitter: { card: 'summary' },
 };
 
 export default function FindAccountantPage() {

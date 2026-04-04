@@ -1,7 +1,22 @@
+import type { Metadata } from 'next';
 import { getAllGuides, getReadingTime } from '@/lib/content/queries';
 import { getCategoryBySlug, CATEGORIES } from '@/lib/content/categories';
 import { FilterPills } from '@/components/shared/filter-pills';
 import type { SerializedGuide } from '@/components/shared/filter-pills';
+
+export const metadata: Metadata = {
+  title: 'All Guides',
+  description:
+    'Browse all Irish accounting guides -- from VAT registration to choosing an accountant.',
+  alternates: { canonical: '/guides' },
+  openGraph: {
+    title: 'All Guides',
+    description:
+      'Browse all Irish accounting guides -- from VAT registration to choosing an accountant.',
+    type: 'website',
+  },
+  twitter: { card: 'summary' },
+};
 
 export default function GuidesPage() {
   const guides: SerializedGuide[] = getAllGuides().map((g) => ({

@@ -4,6 +4,14 @@ export const metadata: Metadata = {
   title: 'Terms of Service',
   description:
     'Terms of service for The Ledger, an educational accounting platform for Irish businesses. Governed by the laws of the Republic of Ireland.',
+  alternates: { canonical: '/terms' },
+  openGraph: {
+    title: 'Terms of Service',
+    description:
+      'Terms of service for The Ledger, an educational accounting platform for Irish businesses. Governed by the laws of the Republic of Ireland.',
+    type: 'website',
+  },
+  twitter: { card: 'summary' },
 };
 
 export default function TermsPage() {

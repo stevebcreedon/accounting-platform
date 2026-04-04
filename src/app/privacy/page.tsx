@@ -4,6 +4,14 @@ export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
     'How The Ledger collects, uses, and protects your data. GDPR-compliant privacy policy for our Irish accounting guides platform.',
+  alternates: { canonical: '/privacy' },
+  openGraph: {
+    title: 'Privacy Policy',
+    description:
+      'How The Ledger collects, uses, and protects your data. GDPR-compliant privacy policy for our Irish accounting guides platform.',
+    type: 'website',
+  },
+  twitter: { card: 'summary' },
 };
 
 export default function PrivacyPage() {

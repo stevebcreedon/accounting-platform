@@ -4,6 +4,14 @@ export const metadata: Metadata = {
   title: 'About The Ledger',
   description:
     'The Ledger provides free, jargon-free accounting guidance for Irish small business owners. Learn about our mission.',
+  alternates: { canonical: '/about' },
+  openGraph: {
+    title: 'About The Ledger',
+    description:
+      'The Ledger provides free, jargon-free accounting guidance for Irish small business owners. Learn about our mission.',
+    type: 'website',
+  },
+  twitter: { card: 'summary' },
 };
 
 export default function AboutPage() {

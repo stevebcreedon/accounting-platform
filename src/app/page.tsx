@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { getAllGuides, getReadingTime } from '@/lib/content/queries';
@@ -5,6 +6,12 @@ import { getCategoryBySlug, CATEGORIES } from '@/lib/content/categories';
 import { ArticleCard } from '@/components/shared/article-card';
 import { CategoryCard } from '@/components/shared/category-card';
 import { EmailCTAPlaceholder } from '@/components/article/email-cta-placeholder';
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+  openGraph: { type: 'website' },
+  twitter: { card: 'summary' },
+};
 
 export default function Home() {
   const latestGuides = getAllGuides().slice(0, 6);

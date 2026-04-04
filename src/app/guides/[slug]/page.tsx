@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getAllGuides, getGuideBySlug, getReadingTime } from '@/lib/content/queries';
 import type { Guide } from '@/lib/content/queries';
@@ -8,6 +9,38 @@ import { TableOfContents } from '@/components/article/table-of-contents';
 import { EmailCTAPlaceholder } from '@/components/article/email-cta-placeholder';
 import { RelatedArticles } from '@/components/article/related-articles';
 import { MDXContent } from '@/components/mdx/mdx-content';
+
+type Props = { params: { slug: string } };
+
+export function generateMetadata({ params }: Props): Metadata {
+  const guide = getGuideBySlug(params.slug);
+  if (!guide) return {};
+  return {
+    title: guide.title,
+    description: guide.description,
+    alternates: { canonical: `/guides/${guide.slug}` },
+    openGraph: {
+      title: guide.title,
+      description: guide.description,
+      type: 'article',
+      publishedTime: guide.publishDate,
+      modifiedTime: guide.updatedDate,
+      images: [
+        {
+          url: `/api/og?title=${encodeURIComponent(guide.title)}&category=${encodeURIComponent(guide.category)}`,
+          width: 1200,
+          height: 630,
+          alt: guide.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: guide.title,
+      description: guide.description,
+    },
+  };
+}
 
 export function generateStaticParams() {
   return getAllGuides().map((guide) => ({ slug: guide.slug }));

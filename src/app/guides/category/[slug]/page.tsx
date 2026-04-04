@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import {
   getGuidesByCategory,
@@ -9,6 +10,24 @@ import {
 } from '@/lib/content/categories';
 import { ArticleCard } from '@/components/shared/article-card';
 import { Breadcrumbs } from '@/components/article/breadcrumbs';
+
+type Props = { params: { slug: string } };
+
+export function generateMetadata({ params }: Props): Metadata {
+  const category = getCategoryBySlug(params.slug);
+  if (!category) return {};
+  return {
+    title: category.name,
+    description: category.description,
+    alternates: { canonical: `/guides/category/${params.slug}` },
+    openGraph: {
+      title: category.name,
+      description: category.description,
+      type: 'website',
+    },
+    twitter: { card: 'summary' },
+  };
+}
 
 export function generateStaticParams() {
   return getAllCategorySlugs().map((slug) => ({ slug }));
