@@ -29,12 +29,23 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || 'https://the-ledger.vercel.app'
+  ),
   title: {
     default: 'The Ledger — Irish Accounting Guidance',
     template: '%s | The Ledger',
   },
   description:
     'Clear, jargon-free accounting guidance for Irish small businesses, sole traders, and company directors.',
+  openGraph: {
+    type: 'website',
+    locale: 'en_IE',
+    siteName: 'The Ledger',
+  },
+  twitter: {
+    card: 'summary',
+  },
 };
 
 export const viewport: Viewport = {
