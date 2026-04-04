@@ -59,12 +59,12 @@ Requirements for initial release. Each maps to roadmap phases.
 ### SEO Infrastructure
 
 - [x] **SEO-01**: generateMetadata on every page: title, description, openGraph, twitter card, canonical URL
-- [ ] **SEO-02**: JSON-LD Article schema on every guide page (headline, author as brand, publisher, dates)
-- [ ] **SEO-03**: JSON-LD FAQPage schema on articles with FAQ sections
-- [ ] **SEO-04**: JSON-LD BreadcrumbList schema on all guide pages
-- [ ] **SEO-05**: JSON-LD Organisation schema on homepage (areaServed: Ireland)
-- [ ] **SEO-06**: XML sitemap auto-generated via built-in Next.js sitemap.ts
-- [ ] **SEO-07**: robots.txt allowing all crawlers
+- [x] **SEO-02**: JSON-LD Article schema on every guide page (headline, author as brand, publisher, dates)
+- [x] **SEO-03**: JSON-LD FAQPage schema on articles with FAQ sections
+- [x] **SEO-04**: JSON-LD BreadcrumbList schema on all guide pages
+- [x] **SEO-05**: JSON-LD Organisation schema on homepage (areaServed: Ireland)
+- [x] **SEO-06**: XML sitemap auto-generated via built-in Next.js sitemap.ts
+- [x] **SEO-07**: robots.txt allowing all crawlers
 - [x] **SEO-08**: Canonical URLs on all pages
 - [x] **SEO-09**: Open Graph and Twitter Card meta tags with programmatic OG images
 - [x] **SEO-10**: Programmatic OG image generation via @vercel/og for each article
@@ -215,12 +215,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PERF-05 | Phase 5 | Complete |
 | PERF-06 | Phase 5 | Complete |
 | SEO-01 | Phase 6 | Complete |
-| SEO-02 | Phase 6 | Pending |
-| SEO-03 | Phase 6 | Pending |
-| SEO-04 | Phase 6 | Pending |
-| SEO-05 | Phase 6 | Pending |
-| SEO-06 | Phase 6 | Pending |
-| SEO-07 | Phase 6 | Pending |
+| SEO-02 | Phase 6 | Complete |
+| SEO-03 | Phase 6 | Complete |
+| SEO-04 | Phase 6 | Complete |
+| SEO-05 | Phase 6 | Complete |
+| SEO-06 | Phase 6 | Complete |
+| SEO-07 | Phase 6 | Complete |
 | SEO-08 | Phase 6 | Complete |
 | SEO-09 | Phase 6 | Complete |
 | SEO-10 | Phase 6 | Complete |

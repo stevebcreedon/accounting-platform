@@ -17,7 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 3: Article Page Template** - Full article renderer with TOC, FAQ, breadcrumbs, key takeaways, and related articles
 - [x] **Phase 4: Site Structure & Pages** - Homepage, guides hub, category archives, find-accountant placeholder, and static pages (completed 2026-04-03)
 - [ ] **Phase 5: Navigation & Accessibility** - Header, footer, mobile-responsive layout shell, keyboard navigation, and print styles
-- [ ] **Phase 6: SEO Infrastructure** - JSON-LD schemas, metadata, sitemap, robots.txt, canonical URLs, OG images, and AI search optimization
+- [x] **Phase 6: SEO Infrastructure** - JSON-LD schemas, metadata, sitemap, robots.txt, canonical URLs, OG images, and AI search optimization (completed 2026-04-04)
 - [ ] **Phase 7: Email Capture** - GDPR-compliant double opt-in email system with Supabase and Resend
 - [ ] **Phase 8: Custom Analytics** - Server-side page view tracking, read tracking, outbound clicks, and pre-aggregation
 - [ ] **Phase 9: Animation & Performance** - Framer Motion interactions, scroll animations, progress bar, and Core Web Vitals optimization
@@ -119,7 +119,7 @@ Plans:
 **Plans**: 3 plans
 Plans:
 - [x] 06-01-PLAN.md — SEO metadata, OG image route, and generateMetadata on all pages
-- [ ] 06-02-PLAN.md — JSON-LD structured data (Article, BreadcrumbList, Organisation), sitemap, robots.txt
+- [x] 06-02-PLAN.md — JSON-LD structured data (Article, BreadcrumbList, Organisation), sitemap, robots.txt
 - [x] 06-03-PLAN.md — Content audit: heading hierarchy, relatedSlugs, AI-optimized intros
 
 ### Phase 7: Email Capture
@@ -183,7 +183,7 @@ Note: Phases 1 and 5 have no dependency between them. Phases 2-4 are the strict 
 | 3. Article Page Template | 2/3 | In Progress|  |
 | 4. Site Structure & Pages | 3/3 | Complete   | 2026-04-03 |
 | 5. Navigation & Accessibility | 1/2 | In Progress|  |
-| 6. SEO Infrastructure | 2/3 | In Progress|  |
+| 6. SEO Infrastructure | 3/3 | Complete   | 2026-04-04 |
 | 7. Email Capture | 0/? | Not started | - |
 | 8. Custom Analytics | 0/? | Not started | - |
 | 9. Animation & Performance | 0/? | Not started | - |

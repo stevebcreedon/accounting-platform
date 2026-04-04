@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: executing
-stopped_at: Completed 06-01-PLAN.md
-last_updated: "2026-04-04T19:46:57.973Z"
+status: verifying
+stopped_at: Completed 06-02-PLAN.md
+last_updated: "2026-04-04T19:49:36.492Z"
 last_activity: 2026-04-04
 progress:
   total_phases: 10
-  completed_phases: 5
+  completed_phases: 6
   total_plans: 15
-  completed_plans: 14
+  completed_plans: 15
   percent: 0
 ---
 
@@ -27,7 +27,7 @@ See: .planning/PROJECT.md (updated 2026-04-03)
 
 Phase: 06 (seo-infrastructure) — EXECUTING
 Plan: 3 of 3
-Status: Ready to execute
+Status: Phase complete — ready for verification
 Last activity: 2026-04-04
 
 Progress: [░░░░░░░░░░] 0%
@@ -66,6 +66,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 05 P02 | 3min | 3 tasks | 11 files |
 | Phase 06 P01 | 3min | 2 tasks | 14 files |
 | Phase 06 P03 | 4min | 2 tasks | 3 files |
+| Phase 06 P02 | 1min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -101,6 +102,8 @@ Recent decisions affecting current work:
 - [Phase 06]: synchronous generateMetadata (not async) because Velite data is synchronous
 - [Phase 06]: Satoshi TTF for OG images; @vercel/og does not support woff2
 - [Phase 06]: Brand Organization as author/publisher in Article schema (D-04/D-05)
+- [Phase 06]: FAQPage JSON-LD left in faq-section.tsx to avoid duplication (D-06)
+- [Phase 06]: No disallow rules in robots.txt -- all crawlers including AI bots allowed (D-11)
 
 ### Pending Todos
 
@@ -113,6 +116,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-04T19:46:57.970Z
-Stopped at: Completed 06-01-PLAN.md
+Last session: 2026-04-04T19:49:36.490Z
+Stopped at: Completed 06-02-PLAN.md
 Resume file: None
