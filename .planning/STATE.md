@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: verifying
-stopped_at: Phase 6 context gathered
-last_updated: "2026-04-04T19:25:17.082Z"
+status: executing
+stopped_at: Completed 06-01-PLAN.md
+last_updated: "2026-04-04T19:46:57.973Z"
 last_activity: 2026-04-04
 progress:
   total_phases: 10
   completed_phases: 5
-  total_plans: 12
-  completed_plans: 12
+  total_plans: 15
+  completed_plans: 14
   percent: 0
 ---
 
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-03)
 
 **Core value:** Irish small business owners find clear, jargon-free answers to every accounting question they'd Google -- and trust this platform enough to sign up for the directory when it launches.
-**Current focus:** Phase 05 — navigation-accessibility
+**Current focus:** Phase 06 — seo-infrastructure
 
 ## Current Position
 
-Phase: 6
-Plan: Not started
-Status: Phase complete — ready for verification
+Phase: 06 (seo-infrastructure) — EXECUTING
+Plan: 3 of 3
+Status: Ready to execute
 Last activity: 2026-04-04
 
 Progress: [░░░░░░░░░░] 0%
@@ -64,6 +64,8 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 04 P03 | 2min | 3 tasks | 6 files |
 | Phase 05 P01 | 2min | 2 tasks | 5 files |
 | Phase 05 P02 | 3min | 3 tasks | 11 files |
+| Phase 06 P01 | 3min | 2 tasks | 14 files |
+| Phase 06 P03 | 4min | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -95,6 +97,10 @@ Recent decisions affecting current work:
 - [Phase 05]: Inline disclaimer text in footer rather than importing DisclaimerBar (avoids conflicting styles)
 - [Phase 05]: NAV_LINKS exported from navigation.tsx, imported by mobile-menu.tsx for DRY link definitions
 - [Phase 05]: pt-16 on main#main-content to clear fixed header; page components return fragments not main wrappers
+- [Phase 06]: Structured intro pattern: direct factual answer in first 1-2 sentences for AI citation readiness
+- [Phase 06]: synchronous generateMetadata (not async) because Velite data is synchronous
+- [Phase 06]: Satoshi TTF for OG images; @vercel/og does not support woff2
+- [Phase 06]: Brand Organization as author/publisher in Article schema (D-04/D-05)
 
 ### Pending Todos
 
@@ -107,6 +113,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-04T19:25:17.079Z
-Stopped at: Phase 6 context gathered
-Resume file: .planning/phases/06-seo-infrastructure/06-CONTEXT.md
+Last session: 2026-04-04T19:46:57.970Z
+Stopped at: Completed 06-01-PLAN.md
+Resume file: None

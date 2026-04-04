@@ -58,19 +58,19 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### SEO Infrastructure
 
-- [ ] **SEO-01**: generateMetadata on every page: title, description, openGraph, twitter card, canonical URL
+- [x] **SEO-01**: generateMetadata on every page: title, description, openGraph, twitter card, canonical URL
 - [ ] **SEO-02**: JSON-LD Article schema on every guide page (headline, author as brand, publisher, dates)
 - [ ] **SEO-03**: JSON-LD FAQPage schema on articles with FAQ sections
 - [ ] **SEO-04**: JSON-LD BreadcrumbList schema on all guide pages
 - [ ] **SEO-05**: JSON-LD Organisation schema on homepage (areaServed: Ireland)
 - [ ] **SEO-06**: XML sitemap auto-generated via built-in Next.js sitemap.ts
 - [ ] **SEO-07**: robots.txt allowing all crawlers
-- [ ] **SEO-08**: Canonical URLs on all pages
-- [ ] **SEO-09**: Open Graph and Twitter Card meta tags with programmatic OG images
-- [ ] **SEO-10**: Programmatic OG image generation via @vercel/og for each article
-- [ ] **SEO-11**: Internal linking: every article links to 2-3 related articles, pillar pages link to all spokes
-- [ ] **SEO-12**: Clear heading hierarchy enforced (H1 > H2 > H3) for AI search optimization
-- [ ] **SEO-13**: Concise introductory paragraphs with direct answers (first 30% optimized for LLM citation)
+- [x] **SEO-08**: Canonical URLs on all pages
+- [x] **SEO-09**: Open Graph and Twitter Card meta tags with programmatic OG images
+- [x] **SEO-10**: Programmatic OG image generation via @vercel/og for each article
+- [x] **SEO-11**: Internal linking: every article links to 2-3 related articles, pillar pages link to all spokes
+- [x] **SEO-12**: Clear heading hierarchy enforced (H1 > H2 > H3) for AI search optimization
+- [x] **SEO-13**: Concise introductory paragraphs with direct answers (first 30% optimized for LLM citation)
 
 ### Email Capture System
 
@@ -214,19 +214,19 @@ Which phases cover which requirements. Updated during roadmap creation.
 | NAV-04 | Phase 5 | Complete |
 | PERF-05 | Phase 5 | Complete |
 | PERF-06 | Phase 5 | Complete |
-| SEO-01 | Phase 6 | Pending |
+| SEO-01 | Phase 6 | Complete |
 | SEO-02 | Phase 6 | Pending |
 | SEO-03 | Phase 6 | Pending |
 | SEO-04 | Phase 6 | Pending |
 | SEO-05 | Phase 6 | Pending |
 | SEO-06 | Phase 6 | Pending |
 | SEO-07 | Phase 6 | Pending |
-| SEO-08 | Phase 6 | Pending |
-| SEO-09 | Phase 6 | Pending |
-| SEO-10 | Phase 6 | Pending |
-| SEO-11 | Phase 6 | Pending |
-| SEO-12 | Phase 6 | Pending |
-| SEO-13 | Phase 6 | Pending |
+| SEO-08 | Phase 6 | Complete |
+| SEO-09 | Phase 6 | Complete |
+| SEO-10 | Phase 6 | Complete |
+| SEO-11 | Phase 6 | Complete |
+| SEO-12 | Phase 6 | Complete |
+| SEO-13 | Phase 6 | Complete |
 | EMAIL-01 | Phase 7 | Pending |
 | EMAIL-02 | Phase 7 | Pending |
 | EMAIL-03 | Phase 7 | Pending |

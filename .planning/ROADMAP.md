@@ -118,9 +118,9 @@ Plans:
   5. Programmatic OG images generate via @vercel/og for each article with correct title and category
 **Plans**: 3 plans
 Plans:
-- [ ] 06-01-PLAN.md — SEO metadata, OG image route, and generateMetadata on all pages
+- [x] 06-01-PLAN.md — SEO metadata, OG image route, and generateMetadata on all pages
 - [ ] 06-02-PLAN.md — JSON-LD structured data (Article, BreadcrumbList, Organisation), sitemap, robots.txt
-- [ ] 06-03-PLAN.md — Content audit: heading hierarchy, relatedSlugs, AI-optimized intros
+- [x] 06-03-PLAN.md — Content audit: heading hierarchy, relatedSlugs, AI-optimized intros
 
 ### Phase 7: Email Capture
 **Goal**: Visitors can subscribe to the platform with full GDPR compliance -- double opt-in, consent proof, and unsubscribe
@@ -183,7 +183,7 @@ Note: Phases 1 and 5 have no dependency between them. Phases 2-4 are the strict 
 | 3. Article Page Template | 2/3 | In Progress|  |
 | 4. Site Structure & Pages | 3/3 | Complete   | 2026-04-03 |
 | 5. Navigation & Accessibility | 1/2 | In Progress|  |
-| 6. SEO Infrastructure | 0/3 | Not started | - |
+| 6. SEO Infrastructure | 2/3 | In Progress|  |
 | 7. Email Capture | 0/? | Not started | - |
 | 8. Custom Analytics | 0/? | Not started | - |
 | 9. Animation & Performance | 0/? | Not started | - |
