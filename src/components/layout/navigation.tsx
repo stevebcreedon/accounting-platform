@@ -47,7 +47,7 @@ export function Navigation() {
                 'text-sm font-bold transition-colors duration-150 py-1',
                 isActive
                   ? 'text-charcoal border-b-2 border-burnt-orange-500'
-                  : 'text-stone-600 hover:text-burnt-orange-500'
+                  : 'text-stone-600 hover:text-burnt-orange-500 nav-link'
               )}
             >
               {link.label}

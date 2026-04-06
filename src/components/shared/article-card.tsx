@@ -21,7 +21,7 @@ export function ArticleCard({
   return (
     <Link
       href={`/guides/${slug}`}
-      className="block bg-white rounded-xl shadow-card hover:shadow-card-hover transition-shadow duration-200 overflow-hidden"
+      className="block bg-white rounded-xl shadow-card hover:shadow-card-hover hover:scale-[1.02] hover:-translate-y-1 transition-all duration-200 overflow-hidden"
     >
       <div className="p-6">
         <div className="flex items-center flex-wrap gap-2">
