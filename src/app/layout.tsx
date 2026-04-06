@@ -5,6 +5,8 @@ import { SkipToContent } from '@/components/layout/skip-to-content';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { PageViewTracker } from '@/components/analytics/page-view-tracker';
+import { MotionProvider } from '@/components/motion/motion-provider';
+import { PageTransition } from '@/components/motion/page-transition';
 import './globals.css';
 
 const dmSans = DM_Sans({
@@ -66,7 +68,11 @@ export default function RootLayout({
         <SkipToContent />
         <Header />
         <main id="main-content" className="pt-16 min-h-screen">
-          {children}
+          <MotionProvider>
+            <PageTransition>
+              {children}
+            </PageTransition>
+          </MotionProvider>
         </main>
         <Footer />
         <PageViewTracker />
