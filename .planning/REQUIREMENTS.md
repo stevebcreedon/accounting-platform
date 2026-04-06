@@ -88,9 +88,9 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **ANAL-01**: Supabase page_views table: id, path, referrer, user_agent, country, created_at
 - [x] **ANAL-02**: Server-side API route for tracking page views (no client-side tracking cookies)
 - [x] **ANAL-03**: Bot filtering on analytics ingestion (exclude known crawlers)
-- [ ] **ANAL-04**: Article read tracking: scroll depth or time-based trigger to distinguish visits from reads
-- [ ] **ANAL-05**: Outbound click tracking for external links (Revenue.ie, CRO.ie, etc.)
-- [ ] **ANAL-06**: Pre-aggregation strategy: materialized views or pg_cron rollups for daily/weekly summaries
+- [x] **ANAL-04**: Article read tracking: scroll depth or time-based trigger to distinguish visits from reads
+- [x] **ANAL-05**: Outbound click tracking for external links (Revenue.ie, CRO.ie, etc.)
+- [x] **ANAL-06**: Pre-aggregation strategy: materialized views or pg_cron rollups for daily/weekly summaries
 - [x] **ANAL-07**: RLS policies on analytics tables (insert via service role only)
 
 ### Animation & Interactions
@@ -238,9 +238,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | ANAL-01 | Phase 8 | Complete |
 | ANAL-02 | Phase 8 | Complete |
 | ANAL-03 | Phase 8 | Complete |
-| ANAL-04 | Phase 8 | Pending |
-| ANAL-05 | Phase 8 | Pending |
-| ANAL-06 | Phase 8 | Pending |
+| ANAL-04 | Phase 8 | Complete |
+| ANAL-05 | Phase 8 | Complete |
+| ANAL-06 | Phase 8 | Complete |
 | ANAL-07 | Phase 8 | Complete |
 | ANIM-01 | Phase 9 | Pending |
 | ANIM-02 | Phase 9 | Pending |
