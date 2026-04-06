@@ -110,7 +110,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **WRITE-03**: Each article has complete frontmatter: title, description, category, publishDate, updatedDate, keywords, author (brand), featured, pillar, relatedSlugs
 - [x] **WRITE-04**: FAQ sections in every article with 3-5 real Irish search queries as questions
 - [x] **WRITE-05**: All articles reference Irish-specific entities (Revenue, CRO, Irish tax rates, thresholds, deadlines, forms)
-- [ ] **WRITE-06**: Remaining 64 articles written with same quality standards (2 articles/week publishing schedule)
+- [x] **WRITE-06**: Remaining 64 articles written with same quality standards (2 articles/week publishing schedule)
 
 ### Performance & Accessibility
 
@@ -258,7 +258,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | WRITE-03 | Phase 10 | Complete |
 | WRITE-04 | Phase 10 | Complete |
 | WRITE-05 | Phase 10 | Complete |
-| WRITE-06 | Phase 10 | Pending |
+| WRITE-06 | Phase 10 | Complete |
 | DEPLOY-01 | Phase 10 | Pending |
 | DEPLOY-02 | Phase 10 | Pending |
 | DEPLOY-03 | Phase 10 | Pending |
