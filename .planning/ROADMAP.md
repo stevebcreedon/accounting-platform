@@ -180,7 +180,7 @@ Plans:
   5. All 64 spoke articles are written with same quality standards, with future publishDates on a 2/week schedule
 **Plans**: 11 plans
 Plans:
-- [ ] 10-01-PLAN.md — Update 3 existing pillar articles + write 2 new pillars (Getting Started, Accounting Basics)
+- [x] 10-01-PLAN.md — Update 3 existing pillar articles + write 2 new pillars (Getting Started, Accounting Basics)
 - [x] 10-02-PLAN.md — Write 3 remaining pillar articles (Choosing an Accountant, Compliance & Deadlines, Industry Guides)
 - [ ] 10-03-PLAN.md — 8 spoke articles: Getting Started category
 - [ ] 10-04-PLAN.md — 8 spoke articles: Business Structures category
@@ -209,4 +209,4 @@ Note: Phases 1 and 5 have no dependency between them. Phases 2-4 are the strict 
 | 7. Email Capture | 1/2 | In Progress|  |
 | 8. Custom Analytics | 2/2 | Complete   | 2026-04-06 |
 | 9. Animation & Performance | 0/2 | Planning complete | - |
-| 10. Content & Deployment | 1/11 | In Progress|  |
+| 10. Content & Deployment | 2/11 | In Progress|  |
