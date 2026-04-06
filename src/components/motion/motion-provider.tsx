@@ -11,7 +11,7 @@ interface MotionProviderProps {
 
 export function MotionProvider({ children }: MotionProviderProps) {
   return (
-    <LazyMotion features={loadFeatures} strict>
+    <LazyMotion features={loadFeatures}>
       {children}
     </LazyMotion>
   );

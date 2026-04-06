@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#FAF8F5',
+  themeColor: '#FFFFFF',
 };
 
 export default function RootLayout({
@@ -64,7 +64,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${dmSans.variable} ${satoshi.variable}`}>
-      <body className="font-body bg-cream text-charcoal antialiased">
+      <body className="font-body bg-white text-charcoal antialiased">
         <SkipToContent />
         <Header />
         <main id="main-content" className="pt-16 min-h-screen">

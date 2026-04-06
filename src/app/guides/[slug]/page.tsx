@@ -137,7 +137,7 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
           <ReadTracker articleSlug={guide.slug} />
 
           {/* Disclaimer */}
-          <p className="text-sm text-stone-500 italic mb-12">
+          <p className="text-sm text-stone-400 italic mb-12">
             This article is for educational purposes only and does not constitute professional accounting advice. For guidance specific to your situation, consult a qualified Irish accountant.
           </p>
 
@@ -154,6 +154,10 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
       {/* Related articles (full width) */}
       {relatedGuides.length > 0 && (
         <ScrollReveal>
+          {/* Orange gradient divider */}
+          <div className="max-w-7xl mx-auto px-6 md:px-8 mt-12">
+            <div className="h-px bg-gradient-to-r from-transparent via-burnt-orange-300 to-transparent" />
+          </div>
           <div className="max-w-7xl mx-auto px-6 md:px-8 mt-12">
             <RelatedArticles guides={relatedGuides} />
           </div>

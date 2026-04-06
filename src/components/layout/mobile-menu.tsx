@@ -77,19 +77,19 @@ export function MobileMenu({ isOpen, onClose, pathname }: MobileMenuProps) {
       role="dialog"
       aria-modal="true"
       aria-label="Site navigation"
-      className="fixed inset-0 z-50 bg-cream flex flex-col items-center justify-center transition-opacity duration-150"
+      className="fixed inset-0 z-50 bg-white flex flex-col items-center justify-center transition-opacity duration-150"
     >
       <button
         ref={closeButtonRef}
-        className="absolute top-4 right-4 flex items-center justify-center w-11 h-11"
+        className="absolute top-4 right-4 flex items-center justify-center w-11 h-11 hover:text-burnt-orange-500 transition-colors"
         aria-label="Close menu"
         onClick={onClose}
       >
-        <X className="h-6 w-6 text-charcoal" />
+        <X className="h-6 w-6" />
       </button>
 
       <span className="font-heading text-h2 font-bold text-charcoal mb-12">
-        The Ledger
+        The <span className="text-burnt-orange-500">Ledger</span>
       </span>
 
       <nav
@@ -103,8 +103,10 @@ export function MobileMenu({ isOpen, onClose, pathname }: MobileMenuProps) {
               key={link.href}
               href={link.href}
               className={cn(
-                'font-heading text-h2 font-bold',
-                isActive ? 'text-burnt-orange-500' : 'text-charcoal'
+                'font-heading text-h2 font-bold transition-colors',
+                isActive
+                  ? 'text-burnt-orange-500'
+                  : 'text-charcoal hover:text-burnt-orange-500'
               )}
               onClick={onClose}
             >
@@ -115,7 +117,7 @@ export function MobileMenu({ isOpen, onClose, pathname }: MobileMenuProps) {
 
         <Link
           href="/contact"
-          className="font-body text-base text-stone-600 mt-8"
+          className="font-body text-base text-stone-500 mt-8 hover:text-burnt-orange-500 transition-colors"
           onClick={onClose}
         >
           Contact

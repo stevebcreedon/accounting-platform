@@ -32,10 +32,10 @@ export function FAQItem({
   id,
 }: FAQItemProps) {
   return (
-    <div className="border-b border-stone-200 last:border-b-0">
+    <div className="border-b border-burnt-orange-100 last:border-b-0">
       <button
         onClick={onToggle}
-        className="flex items-center justify-between w-full py-4 px-6 text-left font-bold text-charcoal hover:bg-cream transition-colors cursor-pointer"
+        className="flex items-center justify-between w-full py-4 px-6 text-left font-bold text-charcoal hover:text-burnt-orange-600 transition-colors cursor-pointer"
         aria-expanded={isOpen}
         aria-controls={id}
       >
@@ -43,8 +43,8 @@ export function FAQItem({
         <ChevronDown
           size={20}
           className={cn(
-            'text-stone-500 transition-transform duration-200 flex-shrink-0',
-            isOpen && 'rotate-180'
+            'transition-transform duration-200 flex-shrink-0',
+            isOpen ? 'rotate-180 text-burnt-orange-500' : 'text-stone-400'
           )}
         />
       </button>
@@ -103,7 +103,7 @@ export function FAQSection({ children }: FAQSectionProps) {
       <h2 className="font-heading text-h3 text-charcoal mb-6">
         Frequently Asked Questions
       </h2>
-      <div className="bg-white rounded-lg overflow-hidden">
+      <div className="bg-white rounded-lg border border-burnt-orange-100 overflow-hidden">
         {childArray.map((child, index) => {
           if (!React.isValidElement(child)) return null;
           return React.cloneElement(

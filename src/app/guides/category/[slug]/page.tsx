@@ -52,9 +52,13 @@ export default function CategoryPage({
             categorySlug={category.slug}
             categoryName={category.name}
           />
-          <h1 className="font-heading text-h1 md:text-[2.5rem] text-charcoal mb-4 mt-6">
+          <span className="inline-block text-xs font-bold uppercase tracking-widest text-burnt-orange-500 bg-burnt-orange-50 px-3 py-1 rounded-full mb-4 mt-6">
+            {category.name}
+          </span>
+          <h1 className="font-heading text-h1 md:text-[2.5rem] text-charcoal mb-3">
             {category.name}
           </h1>
+          <div className="w-12 h-1 bg-burnt-orange-500 rounded-full mb-4" />
           <p className="text-body md:text-[1.125rem] text-stone-700 mb-8 max-w-2xl">
             {category.description}
           </p>

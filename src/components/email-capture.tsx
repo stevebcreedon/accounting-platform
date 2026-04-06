@@ -66,8 +66,8 @@ export function EmailCapture({ source, heading, description }: EmailCaptureProps
 
   if (status === 'success') {
     return (
-      <div className="rounded-lg bg-emerald-50 p-8 text-center">
-        <CheckCircle2 size={48} className="mx-auto text-emerald-600 mb-4" />
+      <div className="rounded-2xl bg-burnt-orange-50/50 border border-burnt-orange-100 p-8 text-center">
+        <CheckCircle2 size={48} className="mx-auto text-burnt-orange-500 mb-4" />
         <h3 className="font-heading text-h3 text-charcoal mb-2">
           Check Your Email
         </h3>
@@ -80,7 +80,7 @@ export function EmailCapture({ source, heading, description }: EmailCaptureProps
   }
 
   return (
-    <div className="rounded-lg bg-stone-50 p-8 text-center">
+    <div className="rounded-2xl bg-burnt-orange-50/30 border border-burnt-orange-100 p-8 text-center">
       <h3 className="font-heading text-h3 text-charcoal mb-2">
         {displayHeading}
       </h3>
@@ -92,7 +92,7 @@ export function EmailCapture({ source, heading, description }: EmailCaptureProps
           name="email"
           required
           placeholder="your@email.com"
-          className="w-full rounded-md border border-stone-300 px-4 py-3 text-base focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20"
+          className="w-full rounded-full border-2 border-burnt-orange-200 px-5 py-3 text-base focus:border-burnt-orange-500 focus:outline-none focus:ring-4 focus:ring-burnt-orange-500/10"
         />
 
         <label className="flex items-start gap-3 text-left text-sm text-stone-600">
@@ -100,13 +100,13 @@ export function EmailCapture({ source, heading, description }: EmailCaptureProps
             type="checkbox"
             checked={consent}
             onChange={(e) => setConsent(e.target.checked)}
-            className="mt-0.5 h-4 w-4 rounded border-stone-300 text-orange-600 focus:ring-orange-500"
+            className="mt-0.5 h-4 w-4 rounded border-burnt-orange-300 text-burnt-orange-500 focus:ring-burnt-orange-500 accent-burnt-orange-500"
           />
           <span>
             I agree to receive email updates from The Ledger. View our{' '}
             <a
               href="/privacy"
-              className="text-orange-600 underline hover:text-orange-700"
+              className="text-burnt-orange-600 underline hover:text-burnt-orange-700"
             >
               Privacy Policy
             </a>
@@ -117,7 +117,7 @@ export function EmailCapture({ source, heading, description }: EmailCaptureProps
         <button
           type="submit"
           disabled={!consent || status === 'loading'}
-          className="w-full rounded-md bg-orange-600 px-6 py-3 font-medium text-white transition-colors hover:bg-orange-700 disabled:cursor-not-allowed disabled:opacity-50"
+          className="w-full rounded-full bg-burnt-orange-500 px-6 py-3 font-medium text-white transition-all hover:bg-burnt-orange-600 hover:shadow-xl hover:shadow-burnt-orange-500/25 disabled:cursor-not-allowed disabled:opacity-50"
         >
           {status === 'loading' ? 'Subscribing...' : 'Subscribe'}
         </button>

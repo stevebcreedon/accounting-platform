@@ -10,10 +10,10 @@ export function CategoryCard({ slug, name, emoji }: CategoryCardProps) {
   return (
     <Link
       href={`/guides/category/${slug}`}
-      className="bg-white rounded-xl border border-stone-200 p-4 text-center hover:bg-burnt-orange-50 hover:border-burnt-orange-200 hover:scale-[1.02] hover:-translate-y-1 transition-all duration-200 overflow-hidden"
+      className="group bg-white rounded-xl border-2 border-burnt-orange-200 p-4 text-center hover:bg-burnt-orange-500 hover:text-white hover:border-burnt-orange-500 hover:shadow-lg hover:shadow-burnt-orange-500/20 hover:-translate-y-0.5 transition-all duration-300 overflow-hidden"
     >
       <span className="text-2xl mb-2 block">{emoji}</span>
-      <span className="font-heading text-sm font-bold text-charcoal">
+      <span className="font-heading text-sm font-bold text-charcoal group-hover:text-white">
         {name}
       </span>
     </Link>

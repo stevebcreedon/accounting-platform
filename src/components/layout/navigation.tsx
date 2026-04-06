@@ -47,13 +47,19 @@ export function Navigation() {
                 'text-sm font-bold transition-colors duration-150 py-1',
                 isActive
                   ? 'text-charcoal border-b-2 border-burnt-orange-500'
-                  : 'text-stone-600 hover:text-burnt-orange-500 nav-link'
+                  : 'text-stone-500 hover:text-burnt-orange-500 nav-link'
               )}
             >
               {link.label}
             </Link>
           );
         })}
+        <Link
+          href="#subscribe"
+          className="text-[13px] font-semibold text-white bg-burnt-orange-500 rounded-full px-5 py-2 hover:bg-burnt-orange-600 hover:shadow-md hover:shadow-burnt-orange-500/20 transition-all"
+        >
+          Subscribe
+        </Link>
       </nav>
 
       <button

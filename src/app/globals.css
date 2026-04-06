@@ -62,7 +62,7 @@
   .article-content {
     @apply prose prose-lg mx-auto max-w-article;
     @apply prose-headings:font-heading;
-    @apply prose-a:text-burnt-orange-500 prose-a:underline-offset-2;
+    @apply prose-a:text-burnt-orange-500 prose-a:underline-offset-2 hover:prose-a:text-burnt-orange-600;
     @apply prose-blockquote:border-burnt-orange-500;
   }
 }

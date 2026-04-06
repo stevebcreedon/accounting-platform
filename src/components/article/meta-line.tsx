@@ -45,8 +45,8 @@ export function MetaLine({
 
       {/* Reading time */}
       <span className="flex items-center gap-1">
-        <Clock size={14} className="text-stone-500" />
-        <span className="text-sm text-stone-600">{readingTime} min read</span>
+        <Clock size={14} className="text-burnt-orange-400" />
+        <span className="text-sm text-burnt-orange-600">{readingTime} min read</span>
       </span>
 
       <Dot />
@@ -63,8 +63,8 @@ export function MetaLine({
       {updatedDate && (
         <>
           <Dot />
-          <span className="flex items-center gap-1 text-sm font-bold px-2 py-1 rounded-full bg-green-50 text-green-700">
-            <ShieldCheck size={14} className="text-green-700" />
+          <span className="flex items-center gap-1 text-sm font-bold px-2 py-1 rounded-full bg-burnt-orange-50 text-burnt-orange-600">
+            <ShieldCheck size={14} className="text-burnt-orange-500" />
             Verified for {getTaxYear(updatedDate)} tax year
           </span>
         </>

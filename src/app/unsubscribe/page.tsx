@@ -28,7 +28,7 @@ export default function UnsubscribePage({
             please contact us at{' '}
             <a
               href="mailto:hello@theledger.ie"
-              className="text-orange-600 underline hover:text-orange-700"
+              className="text-burnt-orange-500 underline hover:text-burnt-orange-600"
             >
               hello@theledger.ie
             </a>
@@ -36,7 +36,7 @@ export default function UnsubscribePage({
           </p>
           <Link
             href="/"
-            className="inline-block rounded-md bg-orange-600 px-6 py-3 font-medium text-white transition-colors hover:bg-orange-700"
+            className="inline-block rounded-full bg-burnt-orange-500 px-6 py-3 font-medium text-white transition-colors hover:bg-burnt-orange-600"
           >
             Return to Homepage
           </Link>
@@ -48,7 +48,7 @@ export default function UnsubscribePage({
   return (
     <div className="max-w-article mx-auto px-6 md:px-8 pt-12 pb-12">
       <div className="article-content text-center">
-        <CheckCircle2 size={48} className="mx-auto text-emerald-600 mb-4" />
+        <CheckCircle2 size={48} className="mx-auto text-burnt-orange-500 mb-4" />
         <h1 className="font-heading text-h1 md:text-[2.5rem] text-charcoal mb-4">
           You&apos;ve Been Unsubscribed
         </h1>
@@ -58,7 +58,7 @@ export default function UnsubscribePage({
         </p>
         <Link
           href="/"
-          className="inline-block rounded-md bg-orange-600 px-6 py-3 font-medium text-white transition-colors hover:bg-orange-700"
+          className="inline-block rounded-full bg-burnt-orange-500 px-6 py-3 font-medium text-white transition-colors hover:bg-burnt-orange-600"
         >
           Return to Homepage
         </Link>

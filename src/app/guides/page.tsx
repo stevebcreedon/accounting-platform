@@ -35,10 +35,14 @@ export default function GuidesPage() {
   return (
     <>
       <ScrollReveal>
-        <div className="max-w-7xl mx-auto px-6 md:px-8 pt-12 pb-12">
-          <h1 className="font-heading text-h1 md:text-[2.5rem] text-charcoal mb-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-8 pt-16 pb-12">
+          <span className="inline-block text-xs font-bold uppercase tracking-widest text-burnt-orange-500 bg-burnt-orange-50 px-3 py-1 rounded-full mb-4">
+            All Guides
+          </span>
+          <h1 className="font-heading text-h1 md:text-[2.5rem] text-charcoal mb-3">
             Accounting Guides
           </h1>
+          <div className="w-12 h-1 bg-burnt-orange-500 rounded-full mb-4" />
           <p className="text-body md:text-[1.125rem] text-stone-700 mb-8 max-w-2xl">
             Expert guidance on tax, compliance, costs, and everything in between
             -- written for Irish business owners.

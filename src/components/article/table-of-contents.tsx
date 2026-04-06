@@ -56,7 +56,7 @@ export function TableOfContents({ toc }: TableOfContentsProps) {
         aria-label="Table of Contents"
         className="hidden lg:block sticky top-24 w-[240px] max-h-[calc(100vh-128px)] overflow-y-auto bg-white rounded-lg p-6"
       >
-        <p className="text-sm font-bold text-stone-500 uppercase tracking-wider mb-4">
+        <p className="text-sm font-bold text-burnt-orange-400 uppercase tracking-wider mb-4">
           On This Page
         </p>
         <ol className="space-y-1">
@@ -70,8 +70,8 @@ export function TableOfContents({ toc }: TableOfContentsProps) {
                   className={cn(
                     'block py-1 pl-3 text-sm border-l-2 transition-colors',
                     isActive
-                      ? 'font-bold text-charcoal border-burnt-orange-500'
-                      : 'text-stone-600 border-transparent hover:text-charcoal'
+                      ? 'font-bold text-burnt-orange-500 border-burnt-orange-500'
+                      : 'text-stone-600 border-transparent hover:text-burnt-orange-500'
                   )}
                 >
                   {entry.title}
@@ -88,8 +88,8 @@ export function TableOfContents({ toc }: TableOfContentsProps) {
                             className={cn(
                               'block py-1 pl-7 text-sm border-l-2 transition-colors',
                               isChildActive
-                                ? 'font-bold text-charcoal border-burnt-orange-500'
-                                : 'text-stone-600 border-transparent hover:text-charcoal'
+                                ? 'font-bold text-burnt-orange-500 border-burnt-orange-500'
+                                : 'text-stone-600 border-transparent hover:text-burnt-orange-500'
                             )}
                           >
                             {child.title}
@@ -106,7 +106,7 @@ export function TableOfContents({ toc }: TableOfContentsProps) {
       </nav>
 
       {/* Mobile: expandable inline block */}
-      <div className="lg:hidden border border-stone-200 rounded-lg bg-white mb-8">
+      <div className="lg:hidden border border-burnt-orange-100 rounded-lg bg-white mb-8">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="flex items-center justify-between w-full p-4 text-sm font-bold text-charcoal"
@@ -134,8 +134,8 @@ export function TableOfContents({ toc }: TableOfContentsProps) {
                     className={cn(
                       'block py-1 pl-3 text-sm border-l-2 transition-colors',
                       isActive
-                        ? 'font-bold text-charcoal border-burnt-orange-500'
-                        : 'text-stone-600 border-transparent hover:text-charcoal'
+                        ? 'font-bold text-burnt-orange-500 border-burnt-orange-500'
+                        : 'text-stone-600 border-transparent hover:text-burnt-orange-500'
                     )}
                   >
                     {entry.title}
@@ -153,8 +153,8 @@ export function TableOfContents({ toc }: TableOfContentsProps) {
                               className={cn(
                                 'block py-1 pl-7 text-sm border-l-2 transition-colors',
                                 isChildActive
-                                  ? 'font-bold text-charcoal border-burnt-orange-500'
-                                  : 'text-stone-600 border-transparent hover:text-charcoal'
+                                  ? 'font-bold text-burnt-orange-500 border-burnt-orange-500'
+                                  : 'text-stone-600 border-transparent hover:text-burnt-orange-500'
                               )}
                             >
                               {child.title}

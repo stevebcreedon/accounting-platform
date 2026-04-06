@@ -26,15 +26,15 @@ export function FilterPills({ categories, allGuides }: FilterPillsProps) {
     : allGuides;
 
   const pillBase =
-    'rounded-full px-4 py-2 text-sm font-bold whitespace-nowrap transition-colors duration-150';
-  const pillActive = `${pillBase} bg-burnt-orange-500 text-white`;
-  const pillInactive = `${pillBase} border border-stone-200 bg-white text-stone-600 hover:bg-stone-50 hover:border-stone-300`;
+    'rounded-full px-4 py-2 text-sm font-bold whitespace-nowrap transition-all duration-200';
+  const pillActive = `${pillBase} bg-burnt-orange-500 text-white border-2 border-burnt-orange-500 shadow-md shadow-burnt-orange-500/20`;
+  const pillInactive = `${pillBase} border-2 border-burnt-orange-200 bg-white text-stone-600 hover:bg-burnt-orange-500 hover:text-white hover:border-burnt-orange-500`;
 
   return (
     <div>
       <div
         role="tablist"
-        className="flex gap-2 overflow-x-auto pb-2 -mx-6 px-6 md:mx-0 md:px-0 md:flex-wrap scrollbar-hide"
+        className="flex gap-2 overflow-x-auto py-3 -mx-6 px-6 md:mx-0 md:px-4 md:flex-wrap scrollbar-hide bg-burnt-orange-50/40 rounded-xl"
       >
         <button
           role="tab"

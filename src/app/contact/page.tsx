@@ -17,10 +17,14 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <div className="max-w-article mx-auto px-6 md:px-8 pt-12 pb-12">
-        <h1 className="font-heading text-h1 md:text-[2.5rem] text-charcoal mb-8">
+      <div className="max-w-article mx-auto px-6 md:px-8 pt-16 pb-12">
+        <span className="inline-block text-xs font-bold uppercase tracking-widest text-burnt-orange-500 bg-burnt-orange-50 px-3 py-1 rounded-full mb-4">
+          Get in Touch
+        </span>
+        <h1 className="font-heading text-h1 md:text-[2.5rem] text-charcoal mb-3">
           Contact
         </h1>
+        <div className="w-12 h-1 bg-burnt-orange-500 rounded-full mb-8" />
         <div className="article-content">
           <p>
             Have a question, suggestion, or correction? We&apos;d love to hear

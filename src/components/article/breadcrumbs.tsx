@@ -24,7 +24,7 @@ export function Breadcrumbs({
         {items.map((item, index) => (
           <li key={item.href} className="flex items-center gap-2">
             {index > 0 && (
-              <ChevronRight size={14} className="text-stone-400" aria-hidden="true" />
+              <ChevronRight size={14} className="text-burnt-orange-200" aria-hidden="true" />
             )}
             <Link
               href={item.href}
@@ -36,9 +36,9 @@ export function Breadcrumbs({
         ))}
         {articleTitle && (
           <li className="flex items-center gap-2">
-            <ChevronRight size={14} className="text-stone-400" aria-hidden="true" />
+            <ChevronRight size={14} className="text-burnt-orange-200" aria-hidden="true" />
             <span
-              className="text-sm text-stone-600 max-w-[200px] truncate"
+              className="text-sm text-burnt-orange-500 max-w-[200px] truncate"
               aria-current="page"
             >
               {articleTitle}
