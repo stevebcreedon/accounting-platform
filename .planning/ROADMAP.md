@@ -134,7 +134,7 @@ Plans:
   5. Every email contains an unsubscribe link that updates the Supabase record
 **Plans**: 2 plans
 Plans:
-- [ ] 07-01-PLAN.md — Backend: Supabase admin client, rate limiter, React Email template, API routes (subscribe, confirm, unsubscribe), SQL migration
+- [x] 07-01-PLAN.md — Backend: Supabase admin client, rate limiter, React Email template, API routes (subscribe, confirm, unsubscribe), SQL migration
 - [ ] 07-02-PLAN.md — Frontend: EmailCapture component, replace placeholders on 3 pages, thank-you and unsubscribe pages
 
 ### Phase 8: Custom Analytics
@@ -187,7 +187,7 @@ Note: Phases 1 and 5 have no dependency between them. Phases 2-4 are the strict 
 | 4. Site Structure & Pages | 3/3 | Complete   | 2026-04-03 |
 | 5. Navigation & Accessibility | 1/2 | In Progress|  |
 | 6. SEO Infrastructure | 3/3 | Complete   | 2026-04-04 |
-| 7. Email Capture | 0/2 | Not started | - |
+| 7. Email Capture | 1/2 | In Progress|  |
 | 8. Custom Analytics | 0/? | Not started | - |
 | 9. Animation & Performance | 0/? | Not started | - |
 | 10. Content & Deployment | 0/? | Not started | - |

@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: verifying
-stopped_at: Phase 7 context gathered
-last_updated: "2026-04-06T07:08:57.469Z"
-last_activity: 2026-04-04
+status: executing
+stopped_at: Completed 07-01-PLAN.md
+last_updated: "2026-04-06T07:35:44.861Z"
+last_activity: 2026-04-06
 progress:
   total_phases: 10
   completed_phases: 6
-  total_plans: 15
-  completed_plans: 15
+  total_plans: 17
+  completed_plans: 16
   percent: 0
 ---
 
@@ -21,14 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-03)
 
 **Core value:** Irish small business owners find clear, jargon-free answers to every accounting question they'd Google -- and trust this platform enough to sign up for the directory when it launches.
-**Current focus:** Phase 06 — seo-infrastructure
+**Current focus:** Phase 07 — email-capture
 
 ## Current Position
 
-Phase: 7
-Plan: Not started
-Status: Phase complete — ready for verification
-Last activity: 2026-04-04
+Phase: 07 (email-capture) — EXECUTING
+Plan: 2 of 2
+Status: Ready to execute
+Last activity: 2026-04-06
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -67,6 +67,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 06 P01 | 3min | 2 tasks | 14 files |
 | Phase 06 P03 | 4min | 2 tasks | 3 files |
 | Phase 06 P02 | 1min | 2 tasks | 4 files |
+| Phase 07 P01 | 2min | 2 tasks | 9 files |
 
 ## Accumulated Context
 
@@ -104,6 +105,9 @@ Recent decisions affecting current work:
 - [Phase 06]: Brand Organization as author/publisher in Article schema (D-04/D-05)
 - [Phase 06]: FAQPage JSON-LD left in faq-section.tsx to avoid duplication (D-06)
 - [Phase 06]: No disallow rules in robots.txt -- all crawlers including AI bots allowed (D-11)
+- [Phase 07]: Service role client (not @supabase/ssr) since no Supabase Auth needed
+- [Phase 07]: In-memory Map rate limiter resets on cold start, acceptable for serverless
+- [Phase 07]: Email normalized to lowercase+trim before all operations
 
 ### Pending Todos
 
@@ -116,6 +120,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-06T07:08:57.466Z
-Stopped at: Phase 7 context gathered
-Resume file: .planning/phases/07-email-capture/07-CONTEXT.md
+Last session: 2026-04-06T07:35:44.857Z
+Stopped at: Completed 07-01-PLAN.md
+Resume file: None

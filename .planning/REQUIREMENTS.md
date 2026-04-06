@@ -74,14 +74,14 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Email Capture System
 
-- [ ] **EMAIL-01**: Supabase subscribers table with: id, email, source, confirmed, confirmation_token, created_at, confirmed_at, consent_text, consent_timestamp, ip_address
-- [ ] **EMAIL-02**: API route (/api/subscribe) validates email, inserts to Supabase, sends confirmation via Resend
-- [ ] **EMAIL-03**: Double opt-in: confirmation email with magic link, updates confirmed flag on click
-- [ ] **EMAIL-04**: Source tracking: homepage, directory-waitlist, article-cta (hidden field with referring page)
+- [x] **EMAIL-01**: Supabase subscribers table with: id, email, source, confirmed, confirmation_token, created_at, confirmed_at, consent_text, consent_timestamp, ip_address
+- [x] **EMAIL-02**: API route (/api/subscribe) validates email, inserts to Supabase, sends confirmation via Resend
+- [x] **EMAIL-03**: Double opt-in: confirmation email with magic link, updates confirmed flag on click
+- [x] **EMAIL-04**: Source tracking: homepage, directory-waitlist, article-cta (hidden field with referring page)
 - [ ] **EMAIL-05**: GDPR consent: explicit checkbox (not pre-checked), consent text stored, link to privacy policy
-- [ ] **EMAIL-06**: Unsubscribe mechanism: link in every email, updates Supabase record
+- [x] **EMAIL-06**: Unsubscribe mechanism: link in every email, updates Supabase record
 - [ ] **EMAIL-07**: Reusable EmailCapture component deployable on any page with configurable source
-- [ ] **EMAIL-08**: Consent proof logging: timestamp, IP address, consent text version stored per subscriber
+- [x] **EMAIL-08**: Consent proof logging: timestamp, IP address, consent text version stored per subscriber
 
 ### Custom Analytics
 
@@ -227,14 +227,14 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-11 | Phase 6 | Complete |
 | SEO-12 | Phase 6 | Complete |
 | SEO-13 | Phase 6 | Complete |
-| EMAIL-01 | Phase 7 | Pending |
-| EMAIL-02 | Phase 7 | Pending |
-| EMAIL-03 | Phase 7 | Pending |
-| EMAIL-04 | Phase 7 | Pending |
+| EMAIL-01 | Phase 7 | Complete |
+| EMAIL-02 | Phase 7 | Complete |
+| EMAIL-03 | Phase 7 | Complete |
+| EMAIL-04 | Phase 7 | Complete |
 | EMAIL-05 | Phase 7 | Pending |
-| EMAIL-06 | Phase 7 | Pending |
+| EMAIL-06 | Phase 7 | Complete |
 | EMAIL-07 | Phase 7 | Pending |
-| EMAIL-08 | Phase 7 | Pending |
+| EMAIL-08 | Phase 7 | Complete |
 | ANAL-01 | Phase 8 | Pending |
 | ANAL-02 | Phase 8 | Pending |
 | ANAL-03 | Phase 8 | Pending |
