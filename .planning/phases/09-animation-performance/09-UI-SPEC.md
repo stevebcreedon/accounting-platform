@@ -61,11 +61,11 @@ Inherited from Phase 1 without modification. No new type tokens are introduced i
 | Role | Size | Weight | Line Height | Font Family |
 |------|------|--------|-------------|-------------|
 | Display/H1 | 32px (2rem) | 700 | 1.15 | Satoshi |
-| H2/H3 | 24px (1.5rem) | 600-700 | 1.25 | Satoshi |
+| H2/H3 | 24px (1.5rem) | 700 | 1.25 | Satoshi |
 | Body | 16px (1rem) | 400 | 1.7 | DM Sans |
 | Meta/Caption | 14px (0.875rem) | 400 | 1.6 | DM Sans |
 
-**Source:** Phase 1 UI-SPEC (inherited)
+**Source:** Phase 1 UI-SPEC (inherited). Phase 1 declares exactly two weights: 400 (regular) and 700 (bold). H2/H3 use 700 exclusively.
 
 ---
 
@@ -155,13 +155,13 @@ This is the core contract for Phase 9. All values are prescriptive.
 |----------|-------|
 | Existing | `shadow-card` to `shadow-card-hover` (already CSS transition-shadow 200ms) |
 | Add: Scale | `scale: 1.02` on hover |
-| Add: Translate | `translateY: -2px` on hover |
+| Add: Translate | `translateY: -4px` on hover |
 | Duration | 200ms |
 | Easing | `easeOut` |
 | Implementation | CSS classes added to existing article-card.tsx (no motion library needed) |
 | Reduced motion | Shadow transition only (no scale, no translate) |
 
-Tailwind classes to add: `hover:scale-[1.02] hover:-translate-y-0.5 transition-all duration-200`
+Tailwind classes to add: `hover:scale-[1.02] hover:-translate-y-1 transition-all duration-200`
 
 **Source:** CONTEXT.md specifics (shadow elevation + slight scale 1.02x)
 
@@ -187,7 +187,7 @@ Same treatment as Article Cards.
 | Effect | Underline slides in from left on hover |
 | Implementation | CSS `after` pseudo-element, `scaleX(0)` to `scaleX(1)`, `origin-left` |
 | Color | burnt-orange-500 (#E8720C) |
-| Height | 2px |
+| Height | 4px |
 | Duration | 200ms |
 | Easing | `easeOut` |
 | Reduced motion | Instant underline appearance (no slide) |
@@ -207,7 +207,7 @@ Same treatment as Article Cards.
 |----------|-------|
 | Position | Fixed, top of viewport, directly below sticky header (top: 64px / top: 4rem) |
 | Width | 100% of viewport |
-| Height | 3px |
+| Height | 4px |
 | Color | burnt-orange-500 (#E8720C) |
 | Background | transparent |
 | Z-index | 49 (one below header's z-50) |
@@ -219,7 +219,7 @@ Same treatment as Article Cards.
 | Scroll range | Tracks `<article>` element scroll progress, not full page |
 | Reduced motion | Still visible (it is informational, not decorative), but no opacity fade -- always visible at full opacity |
 
-**Source:** CONTEXT.md D-10; CONTEXT.md specifics (2-3px, burnt-orange, fades in after scrolling)
+**Source:** CONTEXT.md D-10; CONTEXT.md specifics (burnt-orange, fades in after scrolling)
 
 ### Prefers-Reduced-Motion (ANIM-07)
 
@@ -342,7 +342,7 @@ Inherited from Phase 1 with hover animation additions:
 | State | Shadow | Transform | Transition |
 |-------|--------|-----------|------------|
 | Resting | `shadow-card` | none | -- |
-| Hover | `shadow-card-hover` | `scale(1.02) translateY(-2px)` | `all 200ms ease-out` |
+| Hover | `shadow-card-hover` | `scale(1.02) translateY(-4px)` | `all 200ms ease-out` |
 | Reduced motion hover | `shadow-card-hover` | none | `shadow 200ms ease-out` |
 
 **Source:** Phase 1 UI-SPEC elevation section; CONTEXT.md specifics
@@ -367,12 +367,12 @@ These are the visual artifacts this phase must produce:
 - [ ] `src/components/motion/motion-provider.tsx` -- LazyMotion wrapper with dynamic domAnimation import
 - [ ] `src/components/motion/page-transition.tsx` -- Opacity fade page transition component
 - [ ] `src/components/motion/scroll-reveal.tsx` -- whileInView scroll reveal wrapper with stagger support
-- [ ] `src/components/motion/reading-progress-bar.tsx` -- Scroll-based progress indicator (3px, burnt-orange, article pages only)
+- [ ] `src/components/motion/reading-progress-bar.tsx` -- Scroll-based progress indicator (4px, burnt-orange, article pages only)
 - [ ] Updated `src/app/layout.tsx` -- MotionProvider wrapping children
 - [ ] Updated `src/app/globals.css` -- prefers-reduced-motion media query
-- [ ] Updated `src/components/shared/article-card.tsx` -- hover scale/translate CSS
-- [ ] Updated `src/components/shared/category-card.tsx` -- hover scale/translate CSS
-- [ ] Updated `src/components/layout/navigation.tsx` -- underline slide-in hover effect
+- [ ] Updated `src/components/shared/article-card.tsx` -- hover scale/translate CSS (`hover:-translate-y-1`)
+- [ ] Updated `src/components/shared/category-card.tsx` -- hover scale/translate CSS (`hover:-translate-y-1`)
+- [ ] Updated `src/components/layout/navigation.tsx` -- underline slide-in hover effect (4px height)
 - [ ] Updated `src/app/page.tsx` -- ScrollReveal wrappers on homepage sections
 - [ ] Updated `src/app/guides/[slug]/page.tsx` -- ReadingProgressBar integration
 - [ ] Lighthouse mobile score verified at 90+
