@@ -189,7 +189,7 @@ Plans:
 - [ ] 10-07-PLAN.md — 8 spoke articles: Choosing an Accountant category
 - [ ] 10-08-PLAN.md — 8 spoke articles: Costs & Fees category
 - [x] 10-09-PLAN.md — 8 spoke articles: Compliance & Deadlines category
-- [ ] 10-10-PLAN.md — 8 spoke articles: Industry Guides category
+- [x] 10-10-PLAN.md — 8 spoke articles: Industry Guides category
 - [ ] 10-11-PLAN.md — Daily rebuild cron, build verification, and Vercel deployment
 
 ## Progress
@@ -209,4 +209,4 @@ Note: Phases 1 and 5 have no dependency between them. Phases 2-4 are the strict 
 | 7. Email Capture | 1/2 | In Progress|  |
 | 8. Custom Analytics | 2/2 | Complete   | 2026-04-06 |
 | 9. Animation & Performance | 0/2 | Planning complete | - |
-| 10. Content & Deployment | 6/11 | In Progress|  |
+| 10. Content & Deployment | 7/11 | In Progress|  |
