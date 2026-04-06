@@ -11,6 +11,8 @@ import { RelatedArticles } from '@/components/article/related-articles';
 import { MDXContent } from '@/components/mdx/mdx-content';
 import { JsonLd } from '@/components/seo/json-ld';
 import { buildArticleSchema, buildBreadcrumbSchema } from '@/lib/seo/schemas';
+import { ReadTracker } from '@/components/analytics/read-tracker';
+import { OutboundTracker } from '@/components/analytics/outbound-tracker';
 
 type Props = { params: { slug: string } };
 
@@ -122,9 +124,14 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
           </div>
 
           {/* Article body */}
-          <div className="article-content mb-12">
-            <MDXContent code={guide.body} />
-          </div>
+          <OutboundTracker articleSlug={guide.slug}>
+            <div className="article-content mb-12">
+              <MDXContent code={guide.body} />
+            </div>
+          </OutboundTracker>
+
+          {/* Read tracking marker at ~75% of article content */}
+          <ReadTracker articleSlug={guide.slug} />
 
           {/* Disclaimer */}
           <p className="text-sm text-stone-500 italic mb-12">

@@ -4,6 +4,7 @@ import localFont from 'next/font/local';
 import { SkipToContent } from '@/components/layout/skip-to-content';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
+import { PageViewTracker } from '@/components/analytics/page-view-tracker';
 import './globals.css';
 
 const dmSans = DM_Sans({
@@ -68,6 +69,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <PageViewTracker />
       </body>
     </html>
   );
