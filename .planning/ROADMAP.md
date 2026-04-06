@@ -135,7 +135,7 @@ Plans:
 **Plans**: 2 plans
 Plans:
 - [x] 07-01-PLAN.md — Backend: Supabase admin client, rate limiter, React Email template, API routes (subscribe, confirm, unsubscribe), SQL migration
-- [ ] 07-02-PLAN.md — Frontend: EmailCapture component, replace placeholders on 3 pages, thank-you and unsubscribe pages
+- [x] 07-02-PLAN.md — Frontend: EmailCapture component, replace placeholders on 3 pages, thank-you and unsubscribe pages
 
 ### Phase 8: Custom Analytics
 **Goal**: The platform tracks page views, article reads, and outbound clicks in Supabase with no third-party scripts or cookies
