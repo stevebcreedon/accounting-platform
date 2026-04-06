@@ -1,5 +1,5 @@
 import { MapPin, Search, Star } from 'lucide-react';
-import { EmailCTAPlaceholder } from '@/components/article/email-cta-placeholder';
+import { EmailCapture } from '@/components/email-capture';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -66,7 +66,7 @@ export default function FindAccountantPage() {
         </div>
 
         <div className="max-w-md mx-auto mt-12">
-          <EmailCTAPlaceholder />
+          <EmailCapture source="directory-waitlist" />
         </div>
       </div>
 

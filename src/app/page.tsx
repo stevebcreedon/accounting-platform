@@ -5,7 +5,7 @@ import { getAllGuides, getReadingTime } from '@/lib/content/queries';
 import { getCategoryBySlug, CATEGORIES } from '@/lib/content/categories';
 import { ArticleCard } from '@/components/shared/article-card';
 import { CategoryCard } from '@/components/shared/category-card';
-import { EmailCTAPlaceholder } from '@/components/article/email-cta-placeholder';
+import { EmailCapture } from '@/components/email-capture';
 import { JsonLd } from '@/components/seo/json-ld';
 import { buildOrganisationSchema } from '@/lib/seo/schemas';
 
@@ -90,7 +90,7 @@ export default function Home() {
 
       {/* Email CTA */}
       <section className="max-w-article mx-auto px-6 md:px-8 py-12">
-        <EmailCTAPlaceholder />
+        <EmailCapture source="homepage" />
       </section>
 
     </>

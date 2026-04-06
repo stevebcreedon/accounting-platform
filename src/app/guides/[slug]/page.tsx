@@ -6,7 +6,7 @@ import { getCategoryBySlug } from '@/lib/content/categories';
 import { Breadcrumbs } from '@/components/article/breadcrumbs';
 import { MetaLine } from '@/components/article/meta-line';
 import { TableOfContents } from '@/components/article/table-of-contents';
-import { EmailCTAPlaceholder } from '@/components/article/email-cta-placeholder';
+import { EmailCapture } from '@/components/email-capture';
 import { RelatedArticles } from '@/components/article/related-articles';
 import { MDXContent } from '@/components/mdx/mdx-content';
 import { JsonLd } from '@/components/seo/json-ld';
@@ -132,7 +132,7 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
           </p>
 
           {/* Email CTA placeholder */}
-          <EmailCTAPlaceholder />
+          <EmailCapture source="article-cta" />
         </div>
 
         {/* TOC sidebar (desktop only) */}
