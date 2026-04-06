@@ -104,4 +104,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-06 — Phase 7 (Email Capture) complete: GDPR-compliant subscription with Supabase, Resend, double opt-in, consent proof*
+*Last updated: 2026-04-06 — Phase 8 (Custom Analytics) complete: page views, article reads, outbound clicks in Supabase, bot filtering, cron rollups*
