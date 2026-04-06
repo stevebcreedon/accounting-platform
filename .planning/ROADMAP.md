@@ -21,7 +21,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 7: Email Capture** - GDPR-compliant double opt-in email system with Supabase and Resend
 - [x] **Phase 8: Custom Analytics** - Server-side page view tracking, read tracking, outbound clicks, and pre-aggregation (completed 2026-04-06)
 - [ ] **Phase 9: Animation & Performance** - Framer Motion interactions, scroll animations, progress bar, and Core Web Vitals optimization
-- [ ] **Phase 10: Content & Deployment** - 8 pillar articles written, Vercel deployment, daily rebuild cron, and launch verification
+- [ ] **Phase 10: Content & Deployment** - 72 articles written (8 pillar + 64 spoke), Vercel deployment, daily rebuild cron, and launch verification
 
 ## Phase Details
 
@@ -169,7 +169,7 @@ Plans:
 **UI hint**: yes
 
 ### Phase 10: Content & Deployment
-**Goal**: 8 pillar articles are live on Vercel with automated daily rebuilds for scheduled publishing
+**Goal**: All 72 articles (8 pillar + 64 spoke) are live on Vercel with automated daily rebuilds for scheduled publishing
 **Depends on**: Phase 6, Phase 7, Phase 8, Phase 9
 **Requirements**: WRITE-01, WRITE-02, WRITE-03, WRITE-04, WRITE-05, WRITE-06, DEPLOY-01, DEPLOY-02, DEPLOY-03, DEPLOY-04
 **Success Criteria** (what must be TRUE):
@@ -177,7 +177,20 @@ Plans:
   2. Every article has complete frontmatter (title, description, category, publishDate, keywords, author as brand, pillar flag, relatedSlugs) and 3-5 FAQ questions
   3. The site builds and deploys successfully on Vercel with all articles rendered
   4. A daily rebuild trigger fires at 06:00 UTC, and articles with future publishDate appear on schedule
-  5. Remaining 64 articles have a defined publishing schedule (2/week) with the same quality standards
+  5. All 64 spoke articles are written with same quality standards, with future publishDates on a 2/week schedule
+**Plans**: 11 plans
+Plans:
+- [ ] 10-01-PLAN.md — Update 3 existing pillar articles + write 2 new pillars (Getting Started, Accounting Basics)
+- [ ] 10-02-PLAN.md — Write 3 remaining pillar articles (Choosing an Accountant, Compliance & Deadlines, Industry Guides)
+- [ ] 10-03-PLAN.md — 8 spoke articles: Getting Started category
+- [ ] 10-04-PLAN.md — 8 spoke articles: Business Structures category
+- [ ] 10-05-PLAN.md — 8 spoke articles: Tax Obligations category
+- [ ] 10-06-PLAN.md — 8 spoke articles: Accounting Basics category
+- [ ] 10-07-PLAN.md — 8 spoke articles: Choosing an Accountant category
+- [ ] 10-08-PLAN.md — 8 spoke articles: Costs & Fees category
+- [ ] 10-09-PLAN.md — 8 spoke articles: Compliance & Deadlines category
+- [ ] 10-10-PLAN.md — 8 spoke articles: Industry Guides category
+- [ ] 10-11-PLAN.md — Daily rebuild cron, build verification, and Vercel deployment
 
 ## Progress
 
@@ -196,4 +209,4 @@ Note: Phases 1 and 5 have no dependency between them. Phases 2-4 are the strict 
 | 7. Email Capture | 1/2 | In Progress|  |
 | 8. Custom Analytics | 2/2 | Complete   | 2026-04-06 |
 | 9. Animation & Performance | 0/2 | Planning complete | - |
-| 10. Content & Deployment | 0/? | Not started | - |
+| 10. Content & Deployment | 0/11 | Planning complete | - |
