@@ -13,6 +13,8 @@ import { JsonLd } from '@/components/seo/json-ld';
 import { buildArticleSchema, buildBreadcrumbSchema } from '@/lib/seo/schemas';
 import { ReadTracker } from '@/components/analytics/read-tracker';
 import { OutboundTracker } from '@/components/analytics/outbound-tracker';
+import { ReadingProgressBar } from '@/components/motion/reading-progress-bar';
+import { ScrollReveal } from '@/components/motion/scroll-reveal';
 
 type Props = { params: { slug: string } };
 
@@ -78,6 +80,7 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
 
   return (
     <>
+      <ReadingProgressBar />
       <JsonLd data={articleSchema} />
       <JsonLd data={breadcrumbSchema} />
       <article className="pt-12 pb-12">
@@ -150,9 +153,11 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
 
       {/* Related articles (full width) */}
       {relatedGuides.length > 0 && (
-        <div className="max-w-7xl mx-auto px-6 md:px-8 mt-12">
-          <RelatedArticles guides={relatedGuides} />
-        </div>
+        <ScrollReveal>
+          <div className="max-w-7xl mx-auto px-6 md:px-8 mt-12">
+            <RelatedArticles guides={relatedGuides} />
+          </div>
+        </ScrollReveal>
       )}
     </article>
     </>
