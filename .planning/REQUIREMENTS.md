@@ -123,10 +123,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Deployment
 
-- [ ] **DEPLOY-01**: Deployed on Vercel (default domain -- no custom domain)
-- [ ] **DEPLOY-02**: Environment variables configured in Vercel dashboard
-- [ ] **DEPLOY-03**: Daily rebuild trigger (Vercel cron or GitHub Action) at 06:00 UTC for scheduled publishing
-- [ ] **DEPLOY-04**: Build succeeds with all 8+ pillar articles rendered
+- [x] **DEPLOY-01**: Deployed on Vercel (default domain -- no custom domain)
+- [x] **DEPLOY-02**: Environment variables configured in Vercel dashboard
+- [x] **DEPLOY-03**: Daily rebuild trigger (Vercel cron or GitHub Action) at 06:00 UTC for scheduled publishing
+- [x] **DEPLOY-04**: Build succeeds with all 8+ pillar articles rendered
 
 ## v2 Requirements
 
@@ -259,10 +259,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | WRITE-04 | Phase 10 | Complete |
 | WRITE-05 | Phase 10 | Complete |
 | WRITE-06 | Phase 10 | Complete |
-| DEPLOY-01 | Phase 10 | Pending |
-| DEPLOY-02 | Phase 10 | Pending |
-| DEPLOY-03 | Phase 10 | Pending |
-| DEPLOY-04 | Phase 10 | Pending |
+| DEPLOY-01 | Phase 10 | Complete |
+| DEPLOY-02 | Phase 10 | Complete |
+| DEPLOY-03 | Phase 10 | Complete |
+| DEPLOY-04 | Phase 10 | Complete |
 
 **Coverage:**
 - v1 requirements: 85 total
