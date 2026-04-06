@@ -96,7 +96,7 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
       {/* Two-column layout: content + TOC sidebar */}
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:flex lg:gap-12">
         {/* Main content column */}
-        <div className="max-w-article flex-1 min-w-0">
+        <div className="max-w-article flex-1 min-w-0 mx-auto lg:mx-0">
 
           {/* Pillar enhancement: accent bar + badge */}
           {guide.isPillar && (
