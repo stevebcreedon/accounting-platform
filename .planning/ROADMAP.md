@@ -162,7 +162,10 @@ Plans:
   3. Cards, buttons, and navigation links have visible hover micro-interactions
   4. Article pages display a scroll-based reading progress indicator bar
   5. All animations respect prefers-reduced-motion, LazyMotion minimizes bundle size, and Lighthouse mobile score is 90+
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 09-01-PLAN.md — Install motion library, create 4 motion components, CSS hover micro-interactions, reduced-motion support
+- [ ] 09-02-PLAN.md — Wire MotionProvider/PageTransition into layout, ScrollReveal on pages, ReadingProgressBar on articles, performance verification
 **UI hint**: yes
 
 ### Phase 10: Content & Deployment
@@ -192,5 +195,5 @@ Note: Phases 1 and 5 have no dependency between them. Phases 2-4 are the strict 
 | 6. SEO Infrastructure | 3/3 | Complete   | 2026-04-04 |
 | 7. Email Capture | 1/2 | In Progress|  |
 | 8. Custom Analytics | 2/2 | Complete   | 2026-04-06 |
-| 9. Animation & Performance | 0/? | Not started | - |
+| 9. Animation & Performance | 0/2 | Planning complete | - |
 | 10. Content & Deployment | 0/? | Not started | - |
