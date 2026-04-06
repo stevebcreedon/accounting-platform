@@ -97,11 +97,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [ ] **ANIM-01**: Framer Motion (motion package v12) page transitions between routes
 - [ ] **ANIM-02**: Scroll-triggered reveal animations on homepage sections and article components
-- [ ] **ANIM-03**: Hover state micro-interactions on cards, buttons, and navigation links
-- [ ] **ANIM-04**: LazyMotion used to minimize JS bundle -- strict server/client component boundaries
+- [x] **ANIM-03**: Hover state micro-interactions on cards, buttons, and navigation links
+- [x] **ANIM-04**: LazyMotion used to minimize JS bundle -- strict server/client component boundaries
 - [ ] **ANIM-05**: Reading progress indicator bar on article pages (scroll-based)
-- [ ] **ANIM-06**: Smooth accordion animation on FAQ sections
-- [ ] **ANIM-07**: All animations respect prefers-reduced-motion media query
+- [x] **ANIM-06**: Smooth accordion animation on FAQ sections
+- [x] **ANIM-07**: All animations respect prefers-reduced-motion media query
 
 ### Content Creation
 
@@ -244,11 +244,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | ANAL-07 | Phase 8 | Complete |
 | ANIM-01 | Phase 9 | Pending |
 | ANIM-02 | Phase 9 | Pending |
-| ANIM-03 | Phase 9 | Pending |
-| ANIM-04 | Phase 9 | Pending |
+| ANIM-03 | Phase 9 | Complete |
+| ANIM-04 | Phase 9 | Complete |
 | ANIM-05 | Phase 9 | Pending |
-| ANIM-06 | Phase 9 | Pending |
-| ANIM-07 | Phase 9 | Pending |
+| ANIM-06 | Phase 9 | Complete |
+| ANIM-07 | Phase 9 | Complete |
 | PERF-01 | Phase 9 | Pending |
 | PERF-02 | Phase 9 | Pending |
 | PERF-03 | Phase 9 | Pending |

@@ -164,7 +164,7 @@ Plans:
   5. All animations respect prefers-reduced-motion, LazyMotion minimizes bundle size, and Lighthouse mobile score is 90+
 **Plans**: 2 plans
 Plans:
-- [ ] 09-01-PLAN.md — Install motion library, create 4 motion components, CSS hover micro-interactions, reduced-motion support
+- [x] 09-01-PLAN.md — Install motion library, create 4 motion components, CSS hover micro-interactions, reduced-motion support
 - [ ] 09-02-PLAN.md — Wire MotionProvider/PageTransition into layout, ScrollReveal on pages, ReadingProgressBar on articles, performance verification
 **UI hint**: yes
 
