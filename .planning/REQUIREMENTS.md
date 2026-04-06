@@ -95,11 +95,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Animation & Interactions
 
-- [ ] **ANIM-01**: Framer Motion (motion package v12) page transitions between routes
-- [ ] **ANIM-02**: Scroll-triggered reveal animations on homepage sections and article components
+- [x] **ANIM-01**: Framer Motion (motion package v12) page transitions between routes
+- [x] **ANIM-02**: Scroll-triggered reveal animations on homepage sections and article components
 - [x] **ANIM-03**: Hover state micro-interactions on cards, buttons, and navigation links
 - [x] **ANIM-04**: LazyMotion used to minimize JS bundle -- strict server/client component boundaries
-- [ ] **ANIM-05**: Reading progress indicator bar on article pages (scroll-based)
+- [x] **ANIM-05**: Reading progress indicator bar on article pages (scroll-based)
 - [x] **ANIM-06**: Smooth accordion animation on FAQ sections
 - [x] **ANIM-07**: All animations respect prefers-reduced-motion media query
 
@@ -114,10 +114,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Performance & Accessibility
 
-- [ ] **PERF-01**: Core Web Vitals passing: LCP < 2.5s, INP < 200ms, CLS < 0.1
-- [ ] **PERF-02**: Static site generation (SSG) for all content pages
-- [ ] **PERF-03**: Image optimization via next/image where applicable
-- [ ] **PERF-04**: Font optimization via next/font (prevent layout shift)
+- [x] **PERF-01**: Core Web Vitals passing: LCP < 2.5s, INP < 200ms, CLS < 0.1
+- [x] **PERF-02**: Static site generation (SSG) for all content pages
+- [x] **PERF-03**: Image optimization via next/image where applicable
+- [x] **PERF-04**: Font optimization via next/font (prevent layout shift)
 - [x] **PERF-05**: WCAG 2.1 AA baseline: semantic HTML, color contrast, focus indicators, alt text
 - [x] **PERF-06**: Print-friendly article styles (@media print)
 
@@ -242,17 +242,17 @@ Which phases cover which requirements. Updated during roadmap creation.
 | ANAL-05 | Phase 8 | Complete |
 | ANAL-06 | Phase 8 | Complete |
 | ANAL-07 | Phase 8 | Complete |
-| ANIM-01 | Phase 9 | Pending |
-| ANIM-02 | Phase 9 | Pending |
+| ANIM-01 | Phase 9 | Complete |
+| ANIM-02 | Phase 9 | Complete |
 | ANIM-03 | Phase 9 | Complete |
 | ANIM-04 | Phase 9 | Complete |
-| ANIM-05 | Phase 9 | Pending |
+| ANIM-05 | Phase 9 | Complete |
 | ANIM-06 | Phase 9 | Complete |
 | ANIM-07 | Phase 9 | Complete |
-| PERF-01 | Phase 9 | Pending |
-| PERF-02 | Phase 9 | Pending |
-| PERF-03 | Phase 9 | Pending |
-| PERF-04 | Phase 9 | Pending |
+| PERF-01 | Phase 9 | Complete |
+| PERF-02 | Phase 9 | Complete |
+| PERF-03 | Phase 9 | Complete |
+| PERF-04 | Phase 9 | Complete |
 | WRITE-01 | Phase 10 | Pending |
 | WRITE-02 | Phase 10 | Pending |
 | WRITE-03 | Phase 10 | Pending |

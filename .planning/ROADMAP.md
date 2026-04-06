@@ -165,7 +165,7 @@ Plans:
 **Plans**: 2 plans
 Plans:
 - [x] 09-01-PLAN.md — Install motion library, create 4 motion components, CSS hover micro-interactions, reduced-motion support
-- [ ] 09-02-PLAN.md — Wire MotionProvider/PageTransition into layout, ScrollReveal on pages, ReadingProgressBar on articles, performance verification
+- [x] 09-02-PLAN.md — Wire MotionProvider/PageTransition into layout, ScrollReveal on pages, ReadingProgressBar on articles, performance verification
 **UI hint**: yes
 
 ### Phase 10: Content & Deployment
