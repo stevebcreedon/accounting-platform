@@ -105,11 +105,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Content Creation
 
-- [ ] **WRITE-01**: 8 pillar articles written, SEO-optimized, hyper-specific to Republic of Ireland
-- [ ] **WRITE-02**: Each pillar article: 3,000-4,000 words, answers most commonly asked questions on the topic
-- [ ] **WRITE-03**: Each article has complete frontmatter: title, description, category, publishDate, updatedDate, keywords, author (brand), featured, pillar, relatedSlugs
-- [ ] **WRITE-04**: FAQ sections in every article with 3-5 real Irish search queries as questions
-- [ ] **WRITE-05**: All articles reference Irish-specific entities (Revenue, CRO, Irish tax rates, thresholds, deadlines, forms)
+- [x] **WRITE-01**: 8 pillar articles written, SEO-optimized, hyper-specific to Republic of Ireland
+- [x] **WRITE-02**: Each pillar article: 3,000-4,000 words, answers most commonly asked questions on the topic
+- [x] **WRITE-03**: Each article has complete frontmatter: title, description, category, publishDate, updatedDate, keywords, author (brand), featured, pillar, relatedSlugs
+- [x] **WRITE-04**: FAQ sections in every article with 3-5 real Irish search queries as questions
+- [x] **WRITE-05**: All articles reference Irish-specific entities (Revenue, CRO, Irish tax rates, thresholds, deadlines, forms)
 - [ ] **WRITE-06**: Remaining 64 articles written with same quality standards (2 articles/week publishing schedule)
 
 ### Performance & Accessibility
@@ -253,11 +253,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PERF-02 | Phase 9 | Complete |
 | PERF-03 | Phase 9 | Complete |
 | PERF-04 | Phase 9 | Complete |
-| WRITE-01 | Phase 10 | Pending |
-| WRITE-02 | Phase 10 | Pending |
-| WRITE-03 | Phase 10 | Pending |
-| WRITE-04 | Phase 10 | Pending |
-| WRITE-05 | Phase 10 | Pending |
+| WRITE-01 | Phase 10 | Complete |
+| WRITE-02 | Phase 10 | Complete |
+| WRITE-03 | Phase 10 | Complete |
+| WRITE-04 | Phase 10 | Complete |
+| WRITE-05 | Phase 10 | Complete |
 | WRITE-06 | Phase 10 | Pending |
 | DEPLOY-01 | Phase 10 | Pending |
 | DEPLOY-02 | Phase 10 | Pending |
